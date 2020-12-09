@@ -1,442 +1,829 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="keywords"
-      content="Tuition Funding Fundraising Education Projects FundMyTuition Crowdfunding College Career Fees School Institution blog"
-    />
-    <meta
-      name="description"
-      content="FundMyTuition is a crowdfunding site focused on Education funding. Client can either be student, student loan debtors or an educationalist that wants to carry out a research or a project that could improve the educational system"
-    />
-    <meta name="author" content="BIL" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="keywords" content="Tuition Funding Fundraising Education Projects FundMyTuition Crowdfunding College Career Fees School Institution blog">
+<meta name="description" content="FundMyTuition is a crowdfunding site focused on Education funding. Client can either be student, student loan debtors or an educationalist that wants to carry out a research or a project that could improve the educational system">
+<meta name="author" content="BIL">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Dashboard | FundMyTuition</title>
+<title>Dashboard | FundMyTuition</title> 
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="style.css">
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/css/bootstrap.min.css"
-    />
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
-    <!-- Basic Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="assets/css/custom-style.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+<!-- Basic Stylesheets -->
+<link rel="stylesheet" type="text/css" href="assets/css/custom-style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
-    <!-- Progressbar CSS -->
-    <link rel="stylesheet" href="assets/js/pieprogress/css/rainbow.css" />
-    <link rel="stylesheet" href="assets/js/pieprogress/css/progress.css" />
+<!-- Progressbar CSS -->
+<link rel="stylesheet" href="assets/js/pieprogress/css/rainbow.css">
+<link rel="stylesheet" href="assets/js/pieprogress/css/progress.css">
 
-    <!-- Revolution Slider CSS -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/js/slider-revolution/css/style.css"
-      media="screen"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/js/slider-revolution/rs-plugin/css/settings.css"
-      media="screen"
-    />
+<!-- Revolution Slider CSS -->
+<link rel="stylesheet" type="text/css" href="assets/js/slider-revolution/css/style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="assets/js/slider-revolution/rs-plugin/css/settings.css" media="screen" />
 
-    <!-- Carousels CSS -->
-    <link href="assets/js/bxslider/jquery.bxslider.css" rel="stylesheet" />
+<!-- Carousels CSS -->
+<link href="assets/js/bxslider/jquery.bxslider.css" rel="stylesheet" />
 
-    <!-- Google Fonts & Font-Awesome -->
-    <link
-      href="http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="assets/css/font-awesome.min.css"
-    />
-    <link type="text/css" rel="stylesheet" href="assets/css/icons.css" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/images/favicon.png"
-    />
+<!-- Google Fonts & Font-Awesome -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="assets/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/icons.css">
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
 
-    <!-- Your Custom Styles -->
-    <link rel="stylesheet" type="text/css" href="assets/css/my-styles.css" />
+<!-- Your Custom Styles -->
+<link rel="stylesheet" type="text/css" href="assets/css/my-styles.css">
 
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
 
-    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-    <div class="wrapper">
-      <div class="dashnav">
-        <div class=" dash_navbar">
-          <div class="sidenav">
-            <div class="one"></div>
-            <div class="two"></div>
-            <div class="three"></div>
+<body>
+<div class="wrapper"> 
+    <!-- Header -->
+    <header>
+    <div class="container" style="padding-left:0;">
+      <div id="logo">
+        <a href="index.html"><img src="assets/images/logo.png" alt="FundMyTuition"/>
+          <h6 style="position:absolute; margin-left:30px; font-size:12px; text-transform:none; width:1px; word-wrap:break;">Lite</h6></a>
+        <button type="button" class="collapsed" id="navbar-toggle"><i class="icon fa fa-bars"></i></button>
+      </div>
+      <div class="nav-header-right">
+        <div class="header-right">
+        <div class="search-dash">
+            <form method="get" action="search-results.html">
+              <input type="text" value="Search Here" name="s" id="keyword">
+              <span class="icon fa fa-search transition-color" title="Search"></span>
+            </form>
           </div>
-          <div class="top_menu">
-            <div class="logo">logo</div>
-            <ul>
-              <li>
-                <div
-                  class="search-box border-right"
-                  style="border-right: 1px solid transparent;"
-                >
-                  <form method="get" action="index.html">
-                    <input
-                      type="text"
-                      value="Search Here"
-                      name="s"
-                      id="keyword"
-                      style="display: block;"
-                    />
-                    <span
-                      class="icon fa fa-search transition-color open"
-                      title="Search"
-                    ></span>
-                  </form>
-                </div>
-              </li>
-
-              <li class="dropdown">
-                <i class="fa fa-bell dropbtn"></i>
-                <div class="dropdown-content">
-                  <div class="header-notify">Notification</div>
-                  <div class="notify-content">
-                    <a href="#" class="header-item">
-                      <div class=" profile-img">
-                        <img
-                          class="profile-imgc"
-                          src="https://www.gravatar.com/avatar/"
-                          alt="Nameuser"
-                        />
-                      </div>
-
-                      <div class="avatar-icon avatar-icon__heart"></div>
-                      <div class="notify-item">
-                        <span class="notify-user">Achref Arfaoui </span
-                        ><span> just funded you you you youyou.</span>
-                        <div class="notify-time">2 days ago</div>
-                      </div>
-                    </a>
+          <span class="separator"></span>
+          <div class="header-right">
+            <ul class="notifications">
+              <li class="">
+                <a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-tasks"></i>
+                  <span class="badge">3</span>
+                </a>
+    
+                <div class="dropdown-menu notification-menu large">
+                  <div class="notification-title">
+                    <span class="pull-right label label-default">3</span>
+                    Tasks
                   </div>
-                  <div class="notify-content">
-                    <a href="#" class="header-item">
-                      <div class=" profile-img">
-                        <img
-                          class="profile-imgc"
-                          src="https://www.gravatar.com/avatar/"
-                          alt="Nameuser"
-                        />
-                      </div>
-
-                      <div class="avatar-icon avatar-icon__heart"></div>
-                      <div class="notify-item">
-                        <span class="notify-user">Achref Arfaoui </span
-                        ><span> just funded you you you youyou.</span>
-                        <div class="notify-time">2 days ago</div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="notify-content">
-                    <a href="#" class="header-item">
-                      <div class=" profile-img">
-                        <img
-                          class="profile-imgc"
-                          src="https://www.gravatar.com/avatar/"
-                          alt="Nameuser"
-                        />
-                      </div>
-
-                      <div class="avatar-icon avatar-icon__heart"></div>
-                      <div class="notify-item">
-                        <span class="notify-user">Achref Arfaoui </span
-                        ><span> just funded you you you youyou.</span>
-                        <div class="notify-time">2 days ago</div>
-                      </div>
-                    </a>
+    
+                  <div class="content">
+                    <ul>
+                      <li>
+                        <p class="clearfix mb-xs">
+                          <span class="message pull-left">Annual Goal</span>
+                          <span class="message pull-right text-dark">60%</span>
+                        </p>
+                        <div class="progress progress-xs light">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                        </div>
+                      </li>
+    
+                      <li>
+                        <p class="clearfix mb-xs">
+                          <span class="message pull-left">Monthly Goal</span>
+                          <span class="message pull-right text-dark">98%</span>
+                        </p>
+                        <div class="progress progress-xs light">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;"></div>
+                        </div>
+                      </li>
+    
+                      <li>
+                        <p class="clearfix mb-xs">
+                          <span class="message pull-left">Weekly Goal</span>
+                          <span class="message pull-right text-dark">33%</span>
+                        </p>
+                        <div class="progress progress-xs light mb-xs">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </li>
-              <li>
-                <div class=" profile-img">
-                  <img
-                    class="profile-imgc"
-                    src="https://www.gravatar.com/avatar/"
-                    alt="Nameuser"
-                  />
-                  <a href="#" class="header-item"></a>
+              <li class="">
+                <a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-envelope"></i>
+                  <span class="badge">4</span>
+                </a>
+    
+                <div class="dropdown-menu notification-menu">
+                  <div class="notification-title">
+                    <span class="pull-right label label-default">230</span>
+                    Messages
+                  </div>
+    
+                  <div class="content">
+                    <ul>
+                      <li>
+                        <a href="#" class="clearfix">
+                          <figure class="image">
+                            <img src="assets/images/!sample-user.jpg" alt="Joseph Doe Junior" class="img-circle">
+                          </figure>
+                          <span class="title">Joseph Doe</span>
+                          <span class="message">Lorem ipsum dolor sit.</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="clearfix">
+                          <figure class="image">
+                            <img src="assets/images/!sample-user.jpg" alt="Joseph Junior" class="img-circle">
+                          </figure>
+                          <span class="title">Joseph Junior</span>
+                          <span class="message truncate">Truncated message. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit. Donec sit amet lacinia orci. Proin
+                            vestibulum eget risus non luctus. Nunc cursus lacinia lacinia. Nulla
+                            molestie malesuada est ac tincidunt. Quisque eget convallis diam, nec
+                            venenatis risus. Vestibulum blandit faucibus est et malesuada. Sed
+                            interdum cursus dui nec venenatis. Pellentesque non nisi lobortis,
+                            rutrum eros ut, convallis nisi. Sed tellus turpis, dignissim sit amet
+                            tristique quis, pretium id est. Sed aliquam diam diam, sit amet faucibus
+                            tellus ultricies eu. Aliquam lacinia nibh a metus bibendum, eu commodo
+                            eros commodo. Sed commodo molestie elit, a molestie lacus porttitor id.
+                            Donec facilisis varius sapien, ac fringilla velit porttitor et. Nam
+                            tincidunt gravida dui, sed pharetra odio pharetra nec. Duis consectetur
+                            venenatis pharetra. Vestibulum egestas nisi quis elementum
+                            elementum.</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="clearfix">
+                          <figure class="image">
+                            <img src="assets/images/!sample-user.jpg" alt="Joe Junior" class="img-circle">
+                          </figure>
+                          <span class="title">Joe Junior</span>
+                          <span class="message">Lorem ipsum dolor sit.</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="clearfix">
+                          <figure class="image">
+                            <img src="assets/images/!sample-user.jpg" alt="Joseph Junior" class="img-circle">
+                          </figure>
+                          <span class="title">Joseph Junior</span>
+                          <span class="message truncate">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Donec sit amet lacinia orci. Proin vestibulum eget risus non
+                            luctus. Nunc cursus lacinia lacinia. Nulla molestie malesuada est ac
+                            tincidunt. Quisque eget convallis diam.</span>
+                        </a>
+                      </li>
+                    </ul>
+    
+                    <hr>
+    
+                    <div class="text-right">
+                      <a href="mailbox-folder.html" class="view-more">View All</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="">
+                <a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-bell"></i>
+                  <span class="badge">3</span>
+                </a>
+    
+                <div class="dropdown-menu notification-menu">
+                  <div class="notification-title">
+                    <span class="pull-right label label-default">3</span>
+                    Alerts
+                  </div>
+    
+                  <div class="content">
+                    <ul>
+                      <li>
+                        <a href="#" class="clearfix">
+                          <div class="image">
+                            <i class="fa fa-thumbs-down bg-danger"></i>
+                          </div>
+                          <span class="title">Server is Down!</span>
+                          <span class="message">Just now</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="clearfix">
+                          <div class="image">
+                            <i class="fa fa-lock bg-warning"></i>
+                          </div>
+                          <span class="title">User Locked</span>
+                          <span class="message">15 minutes ago</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="clearfix">
+                          <div class="image">
+                            <i class="fa fa-signal bg-success"></i>
+                          </div>
+                          <span class="title">Connection Restaured</span>
+                          <span class="message">10/10/2014</span>
+                        </a>
+                      </li>
+                    </ul>
+    
+                    <hr>
+    
+                    <div class="text-right">
+                      <a href="ui-elements-alerts.html" class="view-more">View All</a>
+                    </div>
+                  </div>
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="dashboard-con">
-          <div class="sidebar">
-            <ul>
-              <li>
-                <a href="#" class="">
-                  <span class="icon"><i class="fas fa-book"></i></span>
-                  <span class="title">Opportunities</span></a
-                >
-              </li>
-              <li>
-                <a href="#">
-                  <span class="icon"><i class="fas fa-file"></i></span>
-                  <span class="title">Campaign</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="icon"><i class="fas fa-money"></i></span>
-                  <span class="title">Funding</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="icon"><i class="fas fa-heart"></i></span>
-                  <span class="title">Favorites</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="icon"><i class="fas fa-envelope"></i></span>
-                  <span class="title">Message</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="">
-                  <span class="icon"><i class="fas fa-blog"></i></span>
-                  <span class="title">Blogs</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="">
-                  <span class="icon"><i class="fas fa-school"></i></span>
-                  <span class="title">Scholarships</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="icon"><i class="fas fa-cog"></i></span>
-                  <span class="title">Settings</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="main_container">
-            <div class="item opportun">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
-              sapiente adipisci nemo atque eligendi reprehenderit minima
-              blanditiis eum quae aspernatur!
-            </div>
-            <div class="item">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
-              sapiente adipisci nemo atque eligendi reprehenderit minima
-              blanditiis eum quae aspernatur!
-            </div>
-            <div class="item">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
-              sapiente adipisci nemo atque eligendi reprehenderit minima
-              blanditiis eum quae aspernatur!
-            </div>
-            <div class="item">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
-              sapiente adipisci nemo atque eligendi reprehenderit minima
-              blanditiis eum quae aspernatur!
+    
+            <span class="separator"></span>
+    
+            <div id="userbox" class="userbox">
+              <a href="#" data-toggle="dropdown" aria-expanded="false">
+                <figure class="profile-picture">
+                  <img src="assets/images/funder-1.jpg" alt="Joseph Doe" class="img-circle" data-lock-picture="assets/images/funder-1.jpg">
+                </figure>
+                <div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@FundMyTuition.org">
+                  <span class="name">John Doe Junior</span>
+                  <span class="role">administrator</span>
+                </div>
+    
+                <i class="fa custom-caret"></i>
+              </a>
+    
+              <div class="dropdown-menu">
+                <ul class="list-unstyled">
+                  <li class="divider"></li>
+                  <li>
+                    <a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> My Profile</a>
+                  </li>
+                  <li>
+                    <a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="fa fa-lock"></i> Lock Screen</a>
+                  </li>
+                  <li>
+                      <a role="menuitem" tabindex="-1" href="pages-signin.html"><i class="fa fa-gear"></i> Settings</a>
+                    </li>
+                  <li>
+                    <a role="menuitem" tabindex="-1" href="pages-signin.html"><i class="fa fa-power-off"></i> Logout</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--Footer Section-->
-    <hr />
-    <footer>
-      <div class="container footer-links">
+  </header>
+  <!-- ************************ Header Bottom | Page Title ************************ -->
+  <section class="header-bottom">
+    <article>
+      <div class="container"><h1>Profile Dashboard</h1></div>
+    </article>
+  </section>
+  <!-- ************************ Breadcrumbs ************************ -->
+  <section class="breadcrumb">
+    <article class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <ul>
+            <li><span class="fa fa-home"></span>&nbsp; You are here:</li>
+            <li><a href="index.html">Home</a></li>
+            <li class="fa fa-angle-right"></li>
+            <li><a href="event-single.html">profile dashboard</a></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </section>
+  
+  <!-- ************************ Page Content ************************ -->
+  <section class="gray">
+    <article class="container projects-page" id="populard">
+      <div class="row">
+      
+        <!-- ************************ Left Side Area ************************ -->
+        <div class="col-lg-9">
+          <div id="dashb-profile">
+            <div class="up-container">
+              <img src="assets/images/funder-1.jpg" alt="Profile image" class="img-raised rounded-circle img-fluid">
+              <h3>
+                Charle Link
+                <a href="#" class="btn btn-5 outline profile-toggle" id="profile-toggle">Edit</a>
+              </h3>
+              <h6>
+                <i class="fa fa-map-marker"> London, UK</i>
+              </h6>
+              <div class="up-social">
+                <ul>
+                  <li title="Facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li title="LinkedIn"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li title="Instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- ************************ Breadcrumbs ************************ -->
+            <div class="clear"></div>
+            <div class="up-bio dash">
+              <p>
+                The essay is your megaphone — your view of the world and your ambitions. It’s not just a resume or a
+                regurgitation of everything you’ve done.
+                It needs to tell a story with passion, using personal, entertaining anecdotes that showcase your
+                character, your interests, your values,
+                your life experiences, your views of the world, your ambitions and even your sense of humor.
+              </p>
+            </div>
+            <div class="dashb-edit">
+              <h3><a href="#" class="mycampbtn">FundMyTuition Campaigns</a></h3>
+              <ul>
+                <li title="Campaign watchlist"><a href="#"><i class="fa fa-heart-o watchlistbtn"><span
+                        class="count">1</span></i></a></li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="mycamps">
+                <div class="col-lg-4">
+                  <div class="popular-item dash">
+                    <figure class="project-image">
+                      <figcaption><a href="campaign-single.html">View Details</a></figcaption>
+                      <img src="assets/images/popular-1.jpg" alt="img" />
+                    </figure>
+                    <div class="popular-content">
+                      <div class="project-desc">
+                        <h5><a href="#">To save 100 students from dropping out of school <span class="line-green"></span></a>
+                        </h5>
+                        <p>help us save some student from dropping out of school, there parent and guidian can no longer fund
+                          them we
+                          need you to keep them in school</p>
+                      </div>
+                      <div class="popular-data">
+                        <div class="pie_progress" role="progressbar" data-goal="53" data-barcolor="#34cc99"
+                          data-barsize="7.1">
+                          <div class="pie_progress__number">0%</div>
+                          <div class="pie_progress__label">Completed</div>
+                          <!-----label should change to Withdraw when funding gets to 100%----->
+                        </div>
+                      </div>
+                      <div class="popular-details">
+                        <ul>
+                          <li><strong>12</strong> Days Left</li>
+                          <li title="Keep me updated"><a href="#"><i class="fa fa-heart-o"><span
+                                  class="count">1</span></i></a></li>
+                          <li class="last"><strong>$7.000,00</strong> Funded</li>
+                        </ul>
+                      </div>
+                      <div class="clear"></div>
+                      <div class="button">
+                        <a href="#" class="btn btn-3 blue">Donate</a>
+                        <a href="#" class="btn btn-5 up">update</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="popular-item dash">
+                    <figure class="project-image">
+                      <figcaption><a href="campaign-single.html">View Details</a></figcaption>
+                      <img src="assets/images/popular-2.jpg" alt="img" />
+                    </figure>
+                    <div class="popular-content">
+                      <div class="project-desc">
+                        <h5><a href="#">Fund 1000 slum kids to School <span class="line-yellow"></span></a></h5>
+                        <p>They are unfortunate to find themselves in the slum but they do not have to end in the slum, help
+                          us send
+                          1000 kids from slum to school. </p>
+                      </div>
+                      <div class="popular-data">
+                        <div class="pie_progress" role="progressbar" data-goal="75" data-barcolor="#f2d031"
+                          data-barsize="7.1">
+                          <div class="pie_progress__number">0%</div>
+                          <div class="pie_progress__label"> Completed </div>
+                          <!-----label should change to Withdraw when funding gets to 100%----->
+                        </div>
+                      </div>
+                      <div class="popular-details">
+                        <ul>
+                          <li><strong>12</strong> Days Left</li>
+                          <li title="Keep me updated"><a href="#"><i class="fa fa-heart-o"><span
+                                  class="count">1</span></i></a></li>
+                          <li class="last"><strong>R$7.000,00</strong> Funded </li>
+                        </ul>
+                      </div>
+                      <div class="clear"></div>
+                      <div class="button">
+                        <a href="#" class="btn btn-3 blue">Donate</a>
+                        <a href="#" class="btn btn-5 up">update</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="popular-item dash">
+                    <figure class="project-image">
+                      <figcaption><a href="campaign-single.html">View Details</a></figcaption>
+                      <img src="assets/images/popular-3.jpg" alt="img" />
+                    </figure>
+                    <div class="popular-content">
+                      <div class="project-desc">
+                        <h5><a href="#">Renovate our school <span class="line-blue"></span></a></h5>
+                        <p>We cannot over estimate the importance of a condusive learning environment, we need to renoovate
+                          our school
+                          to keep it condusive fro our students.</p>
+                      </div>
+                      <div class="popular-data">
+                        <div class="pie_progress" role="progressbar" data-goal="75" data-barcolor="#3298c9"
+                          data-barsize="7.1">
+                          <div class="pie_progress__number">0%</div>
+                          <div class="pie_progress__label"> Completed </div>
+                          <!-----label should change to Withdraw when funding gets to 100%----->
+                        </div>
+                      </div>
+                      <div class="popular-details">
+                        <ul>
+                          <li><strong>12</strong> Days Left</li>
+                          <li title="Keep me updated"><a href="#"><i class="fa fa-heart-o"><span
+                                  class="count">1</span></i></a></li>
+                          <li class="last"><strong>R$7.000,00</strong> Funded </li>
+                        </ul>
+                      </div>
+                      <div class="clear"></div>
+                      <div class="button">
+                        <a href="#" class="btn btn-3 blue">Donate</a>
+                        <a href="#" class="btn btn-5 up">update</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="watchcamps" style="display: none;">
+                <div class="col-lg-4">
+                  <div class="popular-item dash">
+                    <figure class="project-image">
+                      <figcaption><a href="campaign-single.html">View Details</a></figcaption>
+                      <img src="assets/images/popular-2.jpg" alt="img" />
+                    </figure>
+                    <div class="popular-content">
+                      <div class="project-desc">
+                        <h5><a href="#">Fund 1000 slum kids to School <span class="line-yellow"></span></a></h5>
+                        <p>They are unfortunate to find themselves in the slum but they do not have to end in the slum, help
+                          us send
+                          1000 kids from slum to school. </p>
+                      </div>
+                      <div class="popular-data">
+                        <div class="pie_progress" role="progressbar" data-goal="75" data-barcolor="#f2d031"
+                          data-barsize="7.1">
+                          <div class="pie_progress__number">0%</div>
+                          <div class="pie_progress__label"> Completed </div>
+                          <!-----label should change to Withdraw when funding gets to 100%----->
+                        </div>
+                      </div>
+                      <div class="popular-details">
+                        <ul>
+                          <li><strong>12</strong> Days Left</li>
+                          <li title="Keep me updated"><a href="#"><i class="fa fa-heart-o"><span
+                                  class="count">1</span></i></a></li>
+                          <li class="last"><strong>R$7.000,00</strong> Funded </li>
+                        </ul>
+                      </div>
+                      <div class="clear"></div>
+                      <div class="button">
+                        <a href="#" class="btn btn-3 blue">Donate</a>
+                        <a href="#" class="btn btn-5 up">update</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="popular-item dash">
+                    <figure class="project-image">
+                      <figcaption><a href="campaign-single.html">View Details</a></figcaption>
+                      <img src="assets/images/popular-3.jpg" alt="img" />
+                    </figure>
+                    <div class="popular-content">
+                      <div class="project-desc">
+                        <h5><a href="#">Renovate our school <span class="line-blue"></span></a></h5>
+                        <p>We cannot over estimate the importance of a condusive learning environment, we need to renoovate
+                          our school
+                          to keep it condusive fro our students.</p>
+                      </div>
+                      <div class="popular-data">
+                        <div class="pie_progress" role="progressbar" data-goal="75" data-barcolor="#3298c9"
+                          data-barsize="7.1">
+                          <div class="pie_progress__number">0%</div>
+                          <div class="pie_progress__label"> Completed </div>
+                          <!-----label should change to Withdraw when funding gets to 100%----->
+                        </div>
+                      </div>
+                      <div class="popular-details">
+                        <ul>
+                          <li><strong>12</strong> Days Left</li>
+                          <li title="Keep me updated"><a href="#"><i class="fa fa-heart-o"><span
+                                  class="count">1</span></i></a></li>
+                          <li class="last"><strong>R$7.000,00</strong> Funded </li>
+                        </ul>
+                      </div>
+                      <div class="clear"></div>
+                      <div class="button">
+                        <a href="#" class="btn btn-3 blue">Donate</a>
+                        <a href="#" class="btn btn-5 up">update</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div id="dashb-edit">
+          <div class="up-container editsave">
+            <img src="assets/images/funder-1.jpg" alt="Profile image" class="img-raised rounded-circle img-fluid">
+            <a href="#" class="btn btn-5 up">Change image</a>
+            <h3>
+              Charle Link
+              <a href="#" class="btn btn-5 outline profileb-toggle" id="profileb-toggle">Save</a>
+            </h3>
+            <h6>
+              <i class="fa fa-map-marker"> London, UK</i>
+            </h6>
+            <div class="up-social">
+              <h4 style="text-align: left;">Link Socials </h4>
+              <div class="form-group">
+                  <div class="form-left">
+                    <input type="url" value="" class="form-control" placeholder="Facebook Url" name="fb">
+                    <input type="url" value="" class="form-control" placeholder="Instagram Url" name="Ins">
+                    <input type="url" value="" class="form-control" placeholder="LinkedIn Url" name="Lnk">
+                  </div>
+                  <div class="clear"></div>
+                </div>
+            </div>
+          </div>
+          <!-- ************************ Breadcrumbs ************************ -->
+          <div class="clear"></div>
+          <div class="up-bio dash">
+          <h4>Enter an Interesting Bio</h4>
+          <div class="form-group">
+            <textarea name="Bio" class="form-control" placeholder="Sell yourself" maxlength="500"></textarea>
+            <div class="clear"></div>
+          </div>
+            <p> 
+              The essay is your megaphone — your view of the world and your ambitions. It’s not just a resume or a
+              regurgitation of everything you’ve done.
+              It needs to tell a story with passion, using personal, entertaining anecdotes that showcase your
+              character, your interests, your values,
+              your life experiences, your views of the world, your ambitions and even your sense of humor.
+            </p>
+          </div>
+          <div class="clear"></div>
+          <h4>Campaign Update</h4>
+          <div class="form-group">
+            <textarea name="description" class="form-control" placeholder="Campaign Update Description" maxlength="500"></textarea>
+          </div>
+          <div class="form-group dashb">
+            <div class="select-gallery-type">
+              <ul>
+                <li data-galerytype="vid" class="active">Video</li>
+                <li data-galerytype="img">Images</li>
+              </ul>
+            </div>
+          
+          <div id="video-inputs" class="imgORvid">
+            <div class="form-group">
+              <div class="form-left" style="width:100%;">
+                <input type="text" value="" class="form-control" placeholder="Youtube or Vimeo Link" name="title">
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+          
+          <div id="images-inputs" class="imgORvid">
+            <div class="form-group">
+              <div id="image-field-cnt">
+                <div class="form-left selectimage" id="imgupload-1">
+                  <input type="text" value="" class="form-control" placeholder="Upload Image">
+                  <button type="button" class="imageUploadBtn">Choose File</button>
+                  <input type="file" name="galleryimg[]" />
+                </div>
+              </div>
+              <div id="add-image-field-cnt"><input type="hidden" value="1" id="imgNumber" name="imgNumber"></div>
+              <div class="clear"></div>
+              <button type="button" class="btn btn-5 yellow add-perk-btn add-imgbtn resize" onClick="addimage()">Add Another
+                Image</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="popular-btn yellow"> <a href="campaign-single.html">See More</a></div>
+      </div>
+        <!-- ************************ Right Side Area ************************ -->
+      
+        <div class="col-lg-3">
+          <div class="sidebar">
+      
+            <div class="sidebar-item">
+              <div class="w-title">Edu-news</div>
+              <div class="w-content">
+                <ul class="popular-posts-widget">
+                  <li>
+                    <figure>
+                      <a href="#">
+                        <img src="assets/images/blog/popular-post-1.jpg" alt="EventCountDown Post" />
+                      </a>
+                      <figcaption><a>How to Write a Good College... <span><i class="fa fa-calendar"></i> 4 Aug 2018</span></a>
+                      </figcaption>
+                    </figure>
+                    <span class="clear"></span>
+                  </li>
+                  <li>
+                    <figure>
+                      <a href="#">
+                        <img src="assets/images/blog/popular-post-2.jpg" alt="Edu-News Post" />
+                      </a>
+                      <figcaption><a href="#">Rethinking What Gifted Education... <span><i class="fa fa-calendar"></i> 10 Aug
+                            2018</span></a></figcaption>
+                    </figure>
+                    <span class="clear"></span>
+                  </li>
+                  <li>
+                    <figure>
+                      <a href="#">
+                        <img src="assets/images/blog/popular-post-3.jpg" alt="Edu-News Post" />
+                      </a>
+                      <figcaption><a href="#">Role Models Tell Girls That STEM’s...<span><i class="fa fa-calendar"></i> 19 Aug
+                            2018</span></a></figcaption>
+                    </figure>
+                    <span class="clear"></span>
+                  </li>
+                  <div class="sidebar-item">
+                    <div class="stories-slider">
+                      <div class="slide">
+                        <div class="w-title">Success Stories</div>
+                        <div class="w-content success-stories">
+                          <div class="ssimg"><img src="assets/images/stories/1.jpg" alt="Success Stories" /></div>
+                          <h5>Karen Brigs</h5>
+                          <p><i class="fa fa-quote-left"></i> This is amazing, great platform, can't wait to utilize this
+                            opportunity.</p>
+                        </div>
+                      </div>
+                      <div class="slide">
+                        <div class="w-title">Success Stories</div>
+                        <div class="w-content success-stories">
+                          <div class="ssimg"><img src="assets/images/stories/2.jpg" alt="Success Stories" /></div>
+                          <h5>Timi Van</h5>
+                          <p><i class="fa fa-quote-left"></i> Wow this looks awesome. Can't wait to share this with my
+                            friends, we really needed this</p>
+                        </div>
+                      </div>
+                      <div class="slide">
+                        <div class="w-title">Success Stories</div>
+                        <div class="w-content success-stories">
+                          <div class="ssimg"><img src="assets/images/stories/3.jpg" alt="Success Stories" /></div>
+                          <h5>Ann Wendy</h5>
+                          <p><i class="fa fa-quote-left"></i> I have been out of School and really needed this, I am
+                            definately on this train.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- We Need Volunteers -->
+                  <div class="sidebar-item">
+                    <div class="w-title">FMT Volunteer Program!</div>
+                    <div style="padding:10px;">
+                      <p>Click to find out your lined up benefits of becoming a FundMyTuition emissary and much more. Hurry
+                        and represent your School or community today. Click the link below to register or <a
+                          href="Volunteer.html">here</a> to find out more.</p>
+                      <div class="side-box">
+                        <div class="vol-button">
+                          <a type="button" class="btn btn-3 green" href="volunteerreg.html">Register Here</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  
+  <!-- ************************ Send your idea ************************ -->
+  
+  <section class="send-us">
+    <article class="container">
+      <h3>Have an Educational Project in Need of Funding?</h3>
+      <a href="start.html" class="btn btn-3 yellow">Send to us</a>
+    </article>
+  </section>
+
+<!--Footer Section-->
+
+<footer>
+    <div class="container footer-links">
+      <div class="row">
+        <div class="col-lg-4 footer-about">
+        <div id="logo" style="padding-bottom:20px;">
+          <img src="assets/images/footer-logo.png" class="footer-logo"  alt="FundMyTuition"/>
+        </div> <p style="margin-top:60px;">FundMyTuition is a global public benefit Organization, focused on education, intended run in major zonal regions across the globe.</p>
+        <p>Our mission is to reduce the level of anxiety and hassles students face in sourcing for their tuition or paying off their loans as well as aid quality and innovative Education/Research</p>
+          <ul>
+            <li title="Facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li title="Twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li title="Youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            <li title="LinkedIn"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li title="Google+"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h5>Campaign</h5>
+          <ul>
+            <li><a href="start.html">Send a project</a></li>
+            <li><a href="campaign.html">Explore</a></li>
+            <li><a href="fees.html">Fees</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="process.html">How it works</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h5>Important Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Edu-News</a></li>
+            <li><a href="faqs.html">Faq's</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="terms.html">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+        <h5>Videos</h5>
+        <ul>
+        <li style="text-decoration:none;"><iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=YOURCHANNELNAME" width="80%" height="30%" class="video-container lightbox icon-play"><img src="assets/images/logo.png" alt="Video"/></iframe></li>
+        </ul>
+        </div>
+        <div class="col-lg-2">
+        </div>
+      </div>
+    </div>
+    <div class="copyrights">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-4 footer-about">
-            <div id="logo" style="padding-bottom:20px;">
-              <img
-                src="assets/images/footer-logo.png"
-                class="footer-logo"
-                alt="FundMyTuition"
-              />
-            </div>
-            <p style="margin-top:60px;">
-              FundMyTuition is a global public benefit Organization, focused on
-              education, intended to run in major zonal regions across the
-              globe.
-            </p>
-            <p>
-              Our mission is to reduce the level of anxiety and hassles students
-              face in sourcing for their tuition or paying off their loans as
-              well as aid quality and innovative Education/Research
-            </p>
-            <ul>
-              <li title="Facebook">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li title="Twitter">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li title="Youtube">
-                <a href="#"><i class="fa fa-youtube-play"></i></a>
-              </li>
-              <li title="LinkedIn">
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-              </li>
-              <li title="Google+">
-                <a href="#"><i class="fa fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-2">
-            <h5>Campaign</h5>
-            <ul>
-              <li><a href="start.html">Send a project</a></li>
-              <li><a href="campaign.html">Explore</a></li>
-              <li><a href="fees.html">Fees</a></li>
-              <li><a href="volunteer.html">Volunteer</a></li>
-              <li><a href="process.html">How it works</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2">
-            <h5>Important Links</h5>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="blog.html">blog</a></li>
-              <li><a href="faqs.html">Faq's</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="terms.html">Terms and Conditions</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4">
-            <h5>Videos</h5>
-            <ul>
-              <li style="text-decoration:none;">
-                <div
-                  onclick="showVideo('youtubeembed', 'overlay')"
-                  id="overlay"
-                >
-                  <!--        <img id="youtubeimage" onclick="showVideo('youtubeembed', 'overlay')" class="youtubeimage" src="assets/images/logo.png" alt="FundMyTuition" width="80%" height="30%">-->
-                  <iframe
-                    width="80%"
-                    height="30%"
-                    id="youtubeembed"
-                    class="youtubeembed"
-                    src="https://www.youtube.com/embed/O1v0VtHC3-s?rel=0&amp;controls=0&amp;showinfo=0"
-                    frameborder="0"
-                    allow="autoplay"
-                    allowfullscreen="allowfullscreen"
-                  ></iframe>
-                </div>
-                <div class="morevids">
-                  <a
-                    href="https://www.youtube.com/channel/UCYCBZEAdFI98exaZLJDmX2g?view="
-                    class="btn btn-5 yellow"
-                    ><strong>More Videos</strong></a
-                  >
-                </div>
-                <!--			<iframe width="80%" height="30%" src="https://www.youtube.com/embed/channel?&list=UCYCBZEAdFI98exaZLJDmX2g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-                <!--			<iframe src="http://www.youtube.com/embed/?user="UCYCBZEAdFI98exaZLJDmX2&list="YOURCHANNELNAME" width="80%" height="30%" class="video-container lightbox icon-play" src="assets/images/logo.png" alt="Video"></iframe>-->
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-2"></div>
-        </div>
-      </div>
-      <div class="copyrights">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 copyright-text">
-              <a href="index.html">
-                &copy; 2018 FundMyTuition Powered by BIL | All rights reserved.
-              </a>
-            </div>
+          <div class="col-lg-6 copyright-text">
+            &copy; 2018 FundMyTuition Powered by BIL | All rights reserved.
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+</div>
 
-    <!-- jQuery (necessary for JavaScript plugins) -->
-    <script type="text/javascript" src="assets/js/jquery.js"></script>
-    <script type="text/javascript" src="assets/js/migrate.js"></script>
+<!-- jQuery (necessary for JavaScript plugins) -->
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/migrate.js"></script>
 
-    <!-- Bootstrap Javascript -->
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<!-- Bootstrap Javascript -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 
-    <!-- Progressbar -->
-    <script
-      type="text/javascript"
-      src="assets/js/pieprogress/scripts/rainbow.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/js/pieprogress/scripts/jquery-asPieProgress.js"
-    ></script>
+<!-- Progressbar -->
+<script type="text/javascript" src="assets/js/pieprogress/scripts/rainbow.min.js"></script>
+<script type="text/javascript" src="assets/js/pieprogress/scripts/jquery-asPieProgress.js"></script>
 
-    <!-- Revolution Slider -->
-    <script
-      type="text/javascript"
-      src="assets/js/slider-revolution/rs-plugin/js/jquery.themepunch.plugins.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/js/slider-revolution/rs-plugin/js/jquery.themepunch.revolution.min.js"
-    ></script>
+<!-- Revolution Slider -->
+<script type="text/javascript" src="assets/js/slider-revolution/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="assets/js/slider-revolution/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
-    <!-- Carousels js -->
-    <script
-      type="text/javascript"
-      src="assets/js/bxslider/jquery.bxslider.min.js"
-    ></script>
+<!-- Carousels js -->
+<script type="text/javascript" src="assets/js/bxslider/jquery.bxslider.min.js"></script>
 
-    <!-- Google Maps -->
-    <script
-      type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;v=3.exp"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/js/maps/scripts/jquery.gmap.min.js"
-    ></script>
+<!-- Google Maps -->
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;v=3.exp"></script>
+<script type="text/javascript" src="assets/js/maps/scripts/jquery.gmap.min.js"></script>
 
-    <!--Custom Scroll Bar -->
-    <script type="text/javascript" src="assets/js/jquery.scroll.js"></script>
+<!--Custom Scroll Bar -->
+<script type="text/javascript" src="assets/js/jquery.scroll.js"></script>
 
-    <!-- Grayscale Images -->
-    <script
-      type="text/javascript"
-      src="assets/js/jquery.hoverizr.min.js"
-    ></script>
+<!-- Grayscale Images -->
+<script type="text/javascript" src="assets/js/jquery.hoverizr.min.js"></script>
 
-    <!-- Custom Settings -->
-    <script type="text/javascript" src="assets/js/custom.js"></script>
 
-    <!-- Jquery Plugins - (For Selectbox, EventCountDown) -->
-    <script type="text/javascript" src="assets/js/plugin.js"></script>
+<!-- Custom Settings -->
+<script type="text/javascript" src="assets/js/custom.js"></script>
 
-    <!-- Event Countdown -->
-    <script type="text/javascript" src="assets/js/countdown.js"></script>
+<!-- Jquery Plugins - (For Selectbox, EventCountDown) -->
+<script type="text/javascript" src="assets/js/plugin.js"></script>
 
-    <!-- Retina Script -->
-    <script type="text/javascript" src="assets/js/retina.min.js"></script>
-  </body>
+<!-- Event Countdown -->
+<script type="text/javascript" src="assets/js/countdown.js"></script>
+
+<!-- Retina Script -->
+<script type="text/javascript" src="assets/js/retina.min.js"></script>
+
+</body>
 </html>
+

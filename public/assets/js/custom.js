@@ -148,7 +148,7 @@ jQuery(document).ready(function($){
 	jQuery(".dropdown-join form input[type='text']" || ".dropdown-join form input[type='password']").focus(function(){
 		if(jQuery(this).val()=="Your email"){jQuery(this).val('');}
 		if(jQuery(this).val()=="Create password"){jQuery(this).val(''); jQuery(this).attr("type","password");}
-        if(jQuery(this).val()=="Create confirm-password"){jQuery(this).val(''); jQuery(this).attr("type","password");}
+        if(jQuery(this).val()=="Confirm password"){jQuery(this).val(''); jQuery(this).attr("type","password");}
 	});
 	
 	jQuery(".dropdown-join form input#password").blur(function(){
@@ -204,7 +204,35 @@ jQuery(document).ready(function($){
 	jQuery(".search-box input[type='text']").blur(function(){
 		if(jQuery(this).val()==""){jQuery(this).val('Search Here');}
 	});
-	
+
+	/***********************************************************
+	login and join page toggle
+	************************************************************/
+
+	jQuery(".join-page a").click(function(e){
+		e.preventDefault()
+		//e.stopPropagation()
+	if($('.login-page').css('display') == 'none'){
+		$(".join-page").addClass('inactive').css("display","none")
+		$(".login-page").removeClass('inactive').css("display","block");
+	}
+		
+		return false
+	});
+
+	jQuery(".login-page a").click(function(e){
+		
+		e.preventDefault()
+		if($('.join-page').css('display') == 'none'){
+		$(".login-page").addClass('inactive').css("display","none");
+		$(".join-page").removeClass('inactive').css("display","block");
+		
+		}
+		return false
+
+		
+		
+	});
 	
 	/***********************************************************
 	Revolution Slider Initialization
@@ -968,3 +996,43 @@ Animated Numbers Plugin
 (function(d){var p=function(b){return b.split("").reverse().join("")},l={numberStep:function(b,a){var e=Math.floor(b);d(a.elem).text(e)}},h=function(b){var a=b.elem;a.nodeType&&a.parentNode&&(a=a._animateNumberSetter,a||(a=l.numberStep),a(b.now,b))};d.Tween&&d.Tween.propHooks?d.Tween.propHooks.number={set:h}:d.fx.step.number=h;d.animateNumber={numberStepFactories:{append:function(b){return function(a,e){var k=Math.floor(a);d(e.elem).prop("number",a).text(k+b)}},separator:function(b,a){b=b||" ";a=
 a||3;return function(e,k){var c=Math.floor(e).toString(),s=d(k.elem);if(c.length>a){for(var f=c,g=a,l=f.split("").reverse(),c=[],m,q,n,r=0,h=Math.ceil(f.length/g);r<h;r++){m="";for(n=0;n<g;n++){q=r*g+n;if(q===f.length)break;m+=l[q]}c.push(m)}f=c.length-1;g=p(c[f]);c[f]=p(parseInt(g,10).toString());c=c.join(b);c=p(c)}s.prop("number",e).text(c)}}}};d.fn.animateNumber=function(){for(var b=arguments[0],a=d.extend({},l,b),e=d(this),k=[a],c=1,h=arguments.length;c<h;c++)k.push(arguments[c]);if(b.numberStep){var f=
 this.each(function(){this._animateNumberSetter=b.numberStep}),g=a.complete;a.complete=function(){f.each(function(){delete this._animateNumberSetter});g&&g.apply(this,arguments)}}return e.animate.apply(e,k)}})(jQuery);
+
+/***********************************************************
+	Toggle Dashboard Edit
+	************************************************************/
+	$(document).ready(function() {
+		$(".profile-toggle").click(function(e){
+		e.preventDefault();
+			$('#dashb-edit').css('display', 'block');
+			$('#dashb-profile').css('display', 'none');
+
+		});
+
+		$(".profileb-toggle").click(function(e){
+			e.preventDefault();
+				$('#dashb-profile').css('display', 'block');
+				$('#dashb-edit').css('display', 'none');
+	
+			});
+	})
+
+	/***********************************************************
+	Toggle my campaigns and watch list
+	************************************************************/
+
+	$(document).ready(function() {
+		$(".mycampbtn").click(function(e){
+		e.preventDefault();
+			$('.mycamps').css('display', 'block');
+			$('.watchcamps').css('display', 'none');
+
+		});
+
+		$(".watchlistbtn").click(function(e){
+			e.preventDefault();
+				$('.watchcamps').css('display', 'block');
+				$('.mycamps').css('display', 'none');
+	
+			});
+	})
+

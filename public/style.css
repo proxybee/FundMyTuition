@@ -438,7 +438,9 @@
     border-radius: 3px;
     background: #F2D031;
     text-transform: uppercase;
-    max-width: 100%;
+	max-width: 100%;
+	margin-bottom: 8px !important;
+	margin-left: 15%;
 }
 
 .dropdown-join form a {
@@ -742,7 +744,19 @@ span.intro-icon i {
 	position: relative;
 }
 .project-desc h5 {
-	text-align:center;
+	text-align: center;
+	height: 20px;
+	overflow: hidden;
+}
+
+.project-desc p {
+	text-align: center;
+	height: 60px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	
 }
 .line-red, .line-yellow, .line-blue, .line-green {
 	display:block;
@@ -1151,6 +1165,7 @@ section.gray #popular.style-2 .row {
 	padding:30px 20px;
 	border-radius:1px;
 	background:rgba(255, 255, 255, 1);
+	height: 300px;
 }
 
 .upcoming-events > div > div h4 {
@@ -1584,13 +1599,13 @@ footer .footer-links .footer-about p {
 	line-height: 25px;
 	padding-right: 15px;
 }
-footer .footer-links .footer-about ul {
+footer .footer-links .footer-about ul, .fm-card-4 ul {
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
 	padding-top: 0px !important;
 }
-footer .footer-links .footer-about ul li {
+footer .footer-links .footer-about ul li, .fm-card-4 ul li {
 	width: 25px;
 	height: 25px;
 	padding-top: 6px;
@@ -1604,14 +1619,14 @@ footer .footer-links .footer-about ul li {
 	-webkit-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
 }
-footer .footer-links .footer-about ul li:hover {
+footer .footer-links .footer-about ul li:hover, .fm-card-4 ul li:hover {
 	border: solid 1px #919191;
 }
-footer .footer-links .footer-about ul li i {
+footer .footer-links .footer-about ul li i, .fm-card-4 ul li i  {
 	position: relative;
 	vertical-align: top;
 }
-footer .footer-links .footer-about ul li:hover i {
+footer .footer-links .footer-about ul li:hover i, .fm-card-4 ul li:hover i {
 	color: #919191;
 }
 footer .copyrights {
@@ -3156,3 +3171,24 @@ figcaption ul li a {
 		width: 100%;
 	}
 }
+
+/* ************************ PROCESS ************************ */
+
+.feespage h4{
+	margin: 1.5rem;
+}
+.process {
+	border: solid 1px #4b19d3;
+	margin-bottom: 2rem;
+}
+
+.process ul {
+	margin-top: 2rem;
+}
+
+.row .process-pa{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
