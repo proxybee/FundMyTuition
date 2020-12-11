@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="keywords"
+      content="Tuition Funding Fundraising Education Projects FundMyTuition Crowdfunding College Career Fees School Institution"
+    />
+    <meta
+      name="description"
+      content="FundMyTuition is a crowdfunding site focused on Education funding. Client can either be student, student loan debtors or an educationalist that wants to carry out a research or a project that could improve the educational system"
+    />
+    <meta name="author" content="BIL" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>FundMyTuition</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+
+    <!-- Basic Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/custom-style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+
+    <!-- Progressbar CSS -->
+    <link rel="stylesheet" href="assets/js/pieprogress/css/rainbow.css" />
+    <link rel="stylesheet" href="assets/js/pieprogress/css/progress.css" />
+
+    <!-- Revolution Slider CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/js/slider-revolution/css/style.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/js/slider-revolution/rs-plugin/css/settings.css"
+      media="screen"
+    />
+
+    <!-- Carousels CSS -->
+    <link href="assets/js/bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+    <!-- Google Fonts & Font-Awesome -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/css/font-awesome.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="assets/css/icons.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.png"
+    />
+
+    <!-- Your Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/my-styles.css" />
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <header>
+        <div class="container">
+          <div id="logo">
+            <a href="index.html"
+              ><img src="assets/images/logo.png" alt="FundMyTuition" />
+              <h6
+                style="position:absolute; margin-left:30px; font-size:12px; text-transform:none; width:1px; word-wrap:break;"
+              >
+                Lite
+              </h6></a
+            >
+          </div>
+          <button type="button" class="collapsed" id="navbar-toggle">
+            <i class="icon fa fa-bars"></i>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-header-right">
+            <nav class="main-nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="start.html">Start Campaign</a></li>
+                <li><a href="campaign.html">Explore Campaigns</a></li>
+              </ul>
+            </nav>
+            <div class="header-right">
+              <div class="header-right-btns">
+                <ul>
+                  <li class="login-panel">
+                    <a href="#login">login</a>
+                    <div class="dropdown-login">
+                      <div class="arrow"></div>
+                      <div class="reverse"></div>
+                      <div class="box-reverse left"></div>
+                      <div class="box-reverse right"></div>
+                      <form action="index.html" method="post">
+                        <div class="form-group">
+                          <h3>Login</h3>
+                          <button class="btn btn-linkedin">
+                            <i class="fa fa-linkedin"></i> &nbsp; Login with
+                            LinkedIn
+                          </button>
+                          <button class="btn btn-gmail">
+                            <i class="fa fa-google"></i> &nbsp; Login with
+                            gmail
+                          </button>
+                          <hr />
+                          <img src="assets/images/or.png" alt="OR" />
+                          <input id="email" type="text" value="Your email" />
+                          <input
+                            id="password"
+                            type="text"
+                            value="Your password"
+                          />
+                        </div>
+                        <span class="text-gray remember"
+                          ><input type="checkbox" id="remember" value="" />
+                          <label for="remember">Remember me</label></span
+                        >
+                        <button type="submit" class="btn btn-sigin">
+                          Log me in!
+                        </button>
+                        <br style="clear:both;" />
+                        <hr />
+                        <br />
+                        <a class="link" href="#">Forgot password?</a
+                        ><span class="text-gray"> - New here? </span>
+                        <a class="link" href="#">Join</a>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="join-panel">
+                    <a href="#join">Join</a>
+                    <div class="dropdown-join">
+                      <div class="arrow"></div>
+                      <div class="reverse"></div>
+                      <div class="box-reverse left"></div>
+                      <div class="box-reverse right"></div>
+                      <form action="index.html" method="post">
+                        <div class="form-group">
+                          <h3>My Account</h3>
+                          <button class="btn btn-linkedin">
+                            <i class="fa fa-linkedin"></i> &nbsp; Register with
+                            LinkedIn
+                          </button>
+                          <button class="btn btn-gmail">
+                            <i class="fa fa-google"></i> &nbsp; Register with gmail
+                          </button>
+                          <hr />
+                          <img src="assets/images/or.png" alt="OR" />
+                          <input id="email" type="text" value="Your email" />
+                          <input
+                            id="password"
+                            type="text"
+                            value="Create password"
+                          />
+                          <input
+                            id="confirm-password"
+                            type="text"
+                            value="Confirm password"
+                          />
+                        </div>
+                        <span class="text-gray remember"
+                          ><input type="checkbox" id="Terms" value="" />
+                          <label for="Terms"
+                            >I agree to FundMyTuition's Terms and Condtions AND
+                            I am above 16 Years</label
+                          ></span
+                        >
+                        <button type="submit" class="btn btn-join">
+                          Join FundMyTuition!
+                        </button>
+                        <br style="clear:both;" />
+                        <hr />
+                        <br />
+                        <a class="link" href="#">Forgot password?</a
+                        ><span class="text-gray"> - Already a member? </span>
+                        <a class="link" href="#login" target="_self">login</a>
+                      </form>
+                    </div>
+                  </li>
+                  <li><a href="#" class="btn btn-4 blue">Donate</a></li>
+                </ul>
+              </div>
+              <div class="search-box border-right">
+                <form method="get" action="index.html">
+                  <input
+                    type="text"
+                    value="Search Here"
+                    name="s"
+                    id="keyword"
+                  />
+                  <span
+                    class="icon fa fa-search transition-color"
+                    title="Search"
+                  ></span>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ************************ Header Bottom | Page Title ************************ -->
+      <section class="header-bottom">
+        <article>
+          <div class="container"><h3>Start Your Campaign</h3></div>
+        </article>
+      </section>
+      <!-- ************************ Breadcrumbs ************************ -->
+      <section class="breadcrumb">
+        <article class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <ul>
+                <li><span class="fa fa-home"></span>&nbsp; You are here:</li>
+                <li><a href="index.php">Home</a></li>
+                <li class="fa fa-angle-right"></li>
+                <li><a href="start.php">Start</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ************************ Page Content ************************ -->
+      <section class="gray">
+        <article class="container">
+          <!-- ************************ Form Area Start ************************ -->
+
+          <div class="start-project">
+            <div class="title">
+              <ul>
+                <li data-link="basic-data" class="current">
+                  <a href="#"
+                    ><i class="fa fa-pagelines"></i
+                    ><span>Baisc Information</span></a
+                  >
+                </li>
+                <li data-link="social-media" class="">
+                  <a href="#"
+                    ><i class="fa fa-link"></i><span>Social Media</span></a
+                  >
+                </li>
+                <li data-link="add-perks" class="">
+                  <a href="#"
+                    ><i class="fa fa-tags"></i><span>Add Perks</span></a
+                  >
+                </li>
+                <li data-link="image-vidoe" class="">
+                  <a href="#"
+                    ><i class="fa fa-file-image-o"></i
+                    ><span>Add Images or Video</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <hr />
+            <div class="start-content">
+              <form
+                action="start.php"
+                method="post"
+                enctype="multipart/form-data"
+              >
+                <div id="basic-data" class="form-wizard active">
+                  <div class="form-group">
+                    <div class="form-left">
+                      <input
+                        type="text"
+                        value=""
+                        class="form-control"
+                        placeholder="Fundraising Title"
+                        name="title"
+                      />
+                    </div>
+                    <div class="form-right">
+                      <input
+                        type="text"
+                        value=""
+                        class="form-control"
+                        placeholder="Amount You Want To Raise"
+                        name="money"
+                      />
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="form-left">
+                      <input
+                        type="text"
+                        value=""
+                        class="form-control"
+                        placeholder=" Tagline"
+                        name="tagline"
+                      />
+                    </div>
+                    <div class="form-right">
+                      <select class="form-control arrow-down" name="category">
+                        <option value="">Select A Category</option>
+                        <option value="Research">Reasearch</option>
+                        <option value="Tuition">Tuition</option>
+                        <option value="Essentials">Essentials</option>
+                        <option value="Institution">Institution</option>
+                        <option value="Community Education"
+                          >Community Education</option
+                        >
+                        <option value="Project">Edu-Project</option>
+                      </select>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="form-left">
+                      <input
+                        type="text"
+                        value=""
+                        class="form-control"
+                        placeholder="Deadline - Funding ends"
+                        name="date"
+                      />
+                    </div>
+                    <div class="form-right">
+                      <select class="form-control arrow-down" name="recipient">
+                        <option value="">Select A Funds Recipient</option>
+                        <option value="Student">Student</option>
+                        <option value="Institution">Institution</option>
+                        <option value="Nonprofit">Nonprofit</option>
+                        <option value="Nonprofit">Scientist</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <div
+                      class="form-right selectimage"
+                      id="docuploadbasic-1"
+                      style="width:48% !important;"
+                    >
+                      <input
+                        type="text"
+                        value=""
+                        class="form-control"
+                        placeholder="Campaign Document"
+                      />
+                      <button type="button" class="imageUploadBtn">
+                        Choose File
+                      </button>
+                      <input type="file" name="basicdoc[]" />
+                    </div>
+                    <div class="form-left">
+                      <select class="form-control arrow-down" name="recipient">
+                        <option value="">Select A Campaign</option>
+                        <option value="Project">Project</option>
+                        <option value="Tuition">Tuition</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <textarea
+                      name="description"
+                      class="form-control"
+                      placeholder="Campaign Description"
+                      maxlength="500"
+                    ></textarea>
+                  </div>
+
+                  <div class="next-btn">
+                    <button
+                      type="button"
+                      class="btn btn-4 blue"
+                      data-link="social-media"
+                      onClick="moveform(this,'social-media')"
+                    >
+                      Next
+                    </button>
+                  </div>
+                </div>
+
+                <div id="social-media" class="form-wizard">
+                  <div class="form-group">
+                    <div class="form-left">
+                      <input
+                        type="url"
+                        value=""
+                        class="form-control"
+                        placeholder="Facebook Url"
+                        name="fb"
+                      />
+                    </div>
+                    <div class="form-right">
+                      <input
+                        type="url"
+                        value=""
+                        class="form-control"
+                        placeholder="Twitter Url"
+                        name="tw"
+                      />
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="form-left">
+                      <input
+                        type="url"
+                        value=""
+                        class="form-control"
+                        placeholder="Youtube Url"
+                        name="yt"
+                      />
+                    </div>
+                    <div class="form-right">
+                      <input
+                        type="url"
+                        value=""
+                        class="form-control"
+                        placeholder="Website Url"
+                        name="web"
+                      />
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+
+                  <div class="next-btn">
+                    <button
+                      type="button"
+                      class="btn btn-5 blue"
+                      data-link="basic-data"
+                      onClick="moveform(this,'basic-data')"
+                    >
+                      Back
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-4 blue"
+                      data-link="add-perks"
+                      onClick="moveform(this,'add-perks')"
+                    >
+                      Next
+                    </button>
+                  </div>
+                </div>
+
+                <div id="add-perks" class="form-wizard">
+                  <div id="perk-elements">
+                    <div class="form-group">
+                      <div class="form-left">
+                        <input
+                          type="text"
+                          value=""
+                          class="form-control"
+                          placeholder="Perk Name"
+                          name="perk-title[]"
+                        />
+                      </div>
+                      <div class="form-right">
+                        <input
+                          type="text"
+                          value=""
+                          class="form-control"
+                          placeholder="Contribution Amount"
+                          name="price[]"
+                        />
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="form-left">
+                        <input
+                          type="text"
+                          value=""
+                          class="form-control"
+                          placeholder="Number Available"
+                          name="perk-title[]"
+                        />
+                      </div>
+                      <div class="form-right">
+                        <input
+                          type="text"
+                          value=""
+                          class="form-control"
+                          placeholder="Estimated Delivery Date"
+                          name="price[]"
+                        />
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <textarea
+                        name="perk-description[]"
+                        class="form-control"
+                        placeholder="Perk Description"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div id="add-more-perks"></div>
+
+                  <div class="next-btn">
+                    <button
+                      type="button"
+                      class="btn btn-5 yellow add-perk-btn"
+                      onClick="addperk()"
+                    >
+                      Add Another Perk
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-5 blue"
+                      data-link="social-media"
+                      onClick="moveform(this,'social-media')"
+                    >
+                      Back
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-4 blue"
+                      data-link="image-vidoe"
+                      onClick="moveform(this,'image-vidoe')"
+                    >
+                      Next
+                    </button>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+
+                <div id="image-vidoe" class="form-wizard">
+                  <div class="form-group">
+                    <div class="select-gallery-type">
+                      <ul>
+                        <li data-galerytype="vid" class="active">Video</li>
+                        <li data-galerytype="img">Images</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div id="video-inputs" class="imgORvid">
+                    <div class="form-group">
+                      <div class="form-left" style="width:100%;">
+                        <input
+                          type="text"
+                          value=""
+                          class="form-control"
+                          placeholder="Youtube or Vimeo Link"
+                          name="title"
+                        />
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+
+                  <div id="images-inputs" class="imgORvid">
+                    <div class="form-group">
+                      <div id="image-field-cnt">
+                        <div class="form-left selectimage" id="imgupload-1">
+                          <input
+                            type="text"
+                            value=""
+                            class="form-control"
+                            placeholder="Upload Image"
+                          />
+                          <button type="button" class="imageUploadBtn">
+                            Choose File
+                          </button>
+                          <input type="file" name="galleryimg[]" />
+                        </div>
+                      </div>
+                      <div id="add-image-field-cnt">
+                        <input
+                          type="hidden"
+                          value="1"
+                          id="imgNumber"
+                          name="imgNumber"
+                        />
+                      </div>
+                      <div class="clear"></div>
+                      <button
+                        type="button"
+                        class="btn btn-5 yellow add-perk-btn add-imgbtn"
+                        onClick="addimage()"
+                      >
+                        Add Another Image
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="next-btn">
+                    <button
+                      type="button"
+                      class="btn btn-5 blue"
+                      data-link="add-perks"
+                      onClick="moveform(this,'add-perks')"
+                    >
+                      Back
+                    </button>
+                    <button type="submit" class="btn btn-4 blue">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- ************************ Form Area End ************************ -->
+        </article>
+      </section>
+
+      <!--Footer Section-->
+
+      <footer>
+        <div class="container footer-links">
+          <div class="row">
+            <div class="col-lg-4 footer-about">
+              <div id="logo" style="padding-bottom:20px;">
+                <img
+                  src="assets/images/footer-logo.png"
+                  class="footer-logo"
+                  alt="FundMyTuition"
+                />
+              </div>
+              <p style="margin-top:60px;">
+                FundMyTuition is a global public benefit Organization, focused
+                on education, intended to run in major zonal regions across the
+                globe.
+              </p>
+              <p>
+                Our mission is to reduce the level of anxiety and hassles
+                students face in sourcing for their tuition or paying off their
+                loans as well as aid quality and innovative Education/Research
+              </p>
+              <ul>
+                <li title="Facebook">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li title="Twitter">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li title="Youtube">
+                  <a href="#"><i class="fa fa-youtube-play"></i></a>
+                </li>
+                <li title="LinkedIn">
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li title="Google+">
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <h5>Campaign</h5>
+              <ul>
+                <li><a href="start.html">Send a project</a></li>
+                <li><a href="campaign.html">Explore</a></li>
+                <li><a href="fees.html">Fees</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="process.html">How it works</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <h5>Important Links</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="faqs.html">Faq's</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h5>Videos</h5>
+              <ul>
+                <li style="text-decoration:none;">
+                  <div
+                    onclick="showVideo('youtubeembed', 'overlay')"
+                    id="overlay"
+                  >
+                    <!--        <img id="youtubeimage" onclick="showVideo('youtubeembed', 'overlay')" class="youtubeimage" src="assets/images/logo.png" alt="FundMyTuition" width="80%" height="30%">-->
+                    <iframe
+                      width="80%"
+                      height="30%"
+                      id="youtubeembed"
+                      class="youtubeembed"
+                      src="https://www.youtube.com/embed/O1v0VtHC3-s?rel=0&amp;controls=0&amp;showinfo=0"
+                      frameborder="0"
+                      allow="autoplay"
+                      allowfullscreen="allowfullscreen"
+                    ></iframe>
+                  </div>
+                  <div class="morevids">
+                    <a
+                      href="https://www.youtube.com/channel/UCYCBZEAdFI98exaZLJDmX2g?view="
+                      class="btn btn-5 yellow"
+                      ><strong>More Videos</strong></a
+                    >
+                  </div>
+                  <!--			<iframe width="80%" height="30%" src="https://www.youtube.com/embed/channel?&list=UCYCBZEAdFI98exaZLJDmX2g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+                  <!--			<iframe src="http://www.youtube.com/embed/?user="UCYCBZEAdFI98exaZLJDmX2&list="YOURCHANNELNAME" width="80%" height="30%" class="video-container lightbox icon-play" src="assets/images/logo.png" alt="Video"></iframe>-->
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2"></div>
+          </div>
+        </div>
+        <div class="copyrights">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 copyright-text">
+                <a href="index.html">
+                  &copy; 2018 FundMyTuition Powered by BIL | All rights
+                  reserved.
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for JavaScript plugins) -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/migrate.js"></script>
+
+    <!-- Bootstrap Javascript -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Progressbar -->
+    <script
+      type="text/javascript"
+      src="assets/js/pieprogress/scripts/rainbow.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/pieprogress/scripts/jquery-asPieProgress.js"
+    ></script>
+
+    <!-- Revolution Slider -->
+    <script
+      type="text/javascript"
+      src="assets/js/slider-revolution/rs-plugin/js/jquery.themepunch.plugins.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/slider-revolution/rs-plugin/js/jquery.themepunch.revolution.min.js"
+    ></script>
+
+    <!-- Carousels js -->
+    <script
+      type="text/javascript"
+      src="assets/js/bxslider/jquery.bxslider.min.js"
+    ></script>
+
+    <!-- Google Maps -->
+    <script
+      type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;v=3.exp"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/maps/scripts/jquery.gmap.min.js"
+    ></script>
+
+    <!--Custom Scroll Bar -->
+    <script type="text/javascript" src="assets/js/jquery.scroll.js"></script>
+
+    <!-- Grayscale Images -->
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.hoverizr.min.js"
+    ></script>
+
+    <!-- Custom Settings -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+
+    <!-- Jquery Plugins - (For Selectbox, EventCountDown) -->
+    <script type="text/javascript" src="assets/js/plugin.js"></script>
+
+    <!-- Event Countdown -->
+    <script type="text/javascript" src="assets/js/countdown.js"></script>
+
+    <!-- Retina Script -->
+    <script type="text/javascript" src="assets/js/retina.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="keywords"
+      content="Tuition Funding Fundraising Education Projects FundMyTuition Crowdfunding College Career Fees School Institution"
+    />
+    <meta
+      name="description"
+      content="FundMyTuition is a crowdfunding site focused on Education funding. Client can either be student, student loan debtors or an educationalist that wants to carry out a research or a project that could improve the educational system"
+    />
+    <meta name="author" content="BIL" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>FundMyTuition</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+
+    <!-- Basic Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/custom-style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+
+    <!-- Progressbar CSS -->
+    <link rel="stylesheet" href="assets/js/pieprogress/css/rainbow.css" />
+    <link rel="stylesheet" href="assets/js/pieprogress/css/progress.css" />
+
+    <!-- Revolution Slider CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/js/slider-revolution/css/style.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/js/slider-revolution/rs-plugin/css/settings.css"
+      media="screen"
+    />
+
+    <!-- Carousels CSS -->
+    <link href="assets/js/bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+    <!-- Google Fonts & Font-Awesome -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/css/font-awesome.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="assets/css/icons.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.png"
+    />
+
+    <!-- Your Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/my-styles.css" />
+
+    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <header>
+        <div class="container">
+          <div id="logo">
+            <a href="index.html"
+              ><img src="assets/images/logo.png" alt="FundMyTuition" />
+              <h6
+                style="
+                  position: absolute;
+                  margin-left: 30px;
+                  font-size: 12px;
+                  text-transform: none;
+                  width: 1px;
+                  word-wrap: break;
+                "
+              >
+                Lite
+              </h6></a
+            >
+          </div>
+          <button type="button" class="collapsed" id="navbar-toggle">
+            <i class="icon fa fa-bars"></i>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-header-right">
+            <nav class="main-nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="start.html">Start Campaign</a></li>
+                <li><a href="campaign.html">Explore Campaigns</a></li>
+              </ul>
+            </nav>
+            <div class="header-right">
+              <div class="header-right-btns">
+                <ul>
+                  <li class="login-panel">
+                    <a href="#login">login</a>
+                    <div class="dropdown-login">
+                      <div class="arrow"></div>
+                      <div class="reverse"></div>
+                      <div class="box-reverse left"></div>
+                      <div class="box-reverse right"></div>
+                      <form action="index.html" method="post">
+                        <div class="form-group">
+                          <h3>Login</h3>
+                          <button class="btn btn-linkedin">
+                            <i class="fa fa-linkedin"></i> &nbsp; Login with
+                            LinkedIn
+                          </button>
+                          <button class="btn btn-gmail">
+                            <i class="fa fa-google"></i> &nbsp; Login with gmail
+                          </button>
+                          <hr />
+                          <img src="assets/images/or.png" alt="OR" />
+                          <input id="email" type="text" value="Your email" />
+                          <input
+                            id="password"
+                            type="text"
+                            value="Your password"
+                          />
+                        </div>
+                        <span class="text-gray remember"
+                          ><input type="checkbox" id="remember" value="" />
+                          <label for="remember">Remember me</label></span
+                        >
+                        <button type="submit" class="btn btn-sigin">
+                          Log me in!
+                        </button>
+                        <br style="clear: both" />
+                        <hr />
+                        <br />
+                        <a class="link" href="#">Forgot password?</a
+                        ><span class="text-gray"> - New here? </span>
+                        <a class="link" href="#">Join</a>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="join-panel">
+                    <a href="#join">Join</a>
+                    <div class="dropdown-join">
+                      <div class="arrow"></div>
+                      <div class="reverse"></div>
+                      <div class="box-reverse left"></div>
+                      <div class="box-reverse right"></div>
+                      <form action="index.html" method="post">
+                        <div class="form-group">
+                          <h3>My Account</h3>
+                          <button class="btn btn-linkedin">
+                            <i class="fa fa-linkedin"></i> &nbsp; Register with
+                            LinkedIn
+                          </button>
+                          <button class="btn btn-gmail">
+                            <i class="fa fa-google"></i> &nbsp; Register with
+                            gmail
+                          </button>
+                          <hr />
+                          <img src="assets/images/or.png" alt="OR" />
+                          <input id="email" type="text" value="Your email" />
+                          <input
+                            id="password"
+                            type="text"
+                            value="Create password"
+                          />
+                          <input
+                            id="confirm-password"
+                            type="text"
+                            value="Confirm password"
+                          />
+                        </div>
+                        <span class="text-gray remember"
+                          ><input type="checkbox" id="Terms" value="" />
+                          <label for="Terms"
+                            >I agree to FundMyTuition's Terms and Condtions AND
+                            I am above 16 Years</label
+                          ></span
+                        >
+                        <button type="submit" class="btn btn-join">
+                          Join FundMyTuition!
+                        </button>
+                        <br style="clear: both" />
+                        <hr />
+                        <br />
+                        <a class="link" href="#">Forgot password?</a
+                        ><span class="text-gray"> - Already a member? </span>
+                        <a class="link" href="#login" target="_self">login</a>
+                      </form>
+                    </div>
+                  </li>
+                  <li><a href="#" class="btn btn-4 blue">Donate</a></li>
+                </ul>
+              </div>
+              <div class="search-box border-right">
+                <form method="get" action="index.html">
+                  <input
+                    type="text"
+                    value="Search Here"
+                    name="s"
+                    id="keyword"
+                  />
+                  <span
+                    class="icon fa fa-search transition-color"
+                    title="Search"
+                  ></span>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ************************ Header Bottom | Page Title ************************ -->
+      <section class="header-bottom">
+        <article>
+          <div class="container"><h3>Park At Birdcagewalk</h3></div>
+        </article>
+      </section>
+      <!-- ************************ Breadcrumbs ************************ -->
+      <section class="breadcrumb">
+        <article class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><span class="fa fa-home"></span>&nbsp; You are here:</li>
+                <li><a href="index.html">Home</a></li>
+                <li class="fa fa-angle-right"></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li class="fa fa-angle-right"></li>
+                <li>Park At Birdcagewalk</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 align-right sub-menu social">
+              <ul>
+                <li>
+                  <i class="fa fa-map-marker"></i> &nbsp; Sample London, UK
+                  &nbsp;&nbsp;
+                </li>
+                <li>
+                  &nbsp;&nbsp;<a href="#"
+                    ><span class="icon-community"></span> &nbsp; Community</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ************************ Page Content ************************ -->
+      <section class="gray">
+        <article class="container project-single">
+          <div class="row about-project">
+            <!-- ************************ Left Side Area ************************ -->
+
+            <div class="col-lg-8">
+              <!-- ************************ Project Gallery ************************ -->
+
+              <div class="pslider">
+                <div class="slide">
+                  <img src="assets/images/projects/singe-2.jpg" alt="img" />
+                </div>
+                <div class="slide">
+                  <img src="assets/images/projects/singe-1.jpg" alt="img" />
+                </div>
+                <div class="slide">
+                  <img src="assets/images/projects/singe-3.jpg" alt="img" />
+                </div>
+                <div class="slide">
+                  <img src="assets/images/projects/singe-4.jpg" alt="img" />
+                </div>
+                <div class="slide">
+                  <img src="assets/images/projects/singe-5.jpg" alt="img" />
+                </div>
+                <div class="slide">
+                  <img src="assets/images/projects/singe-6.jpg" alt="img" />
+                </div>
+              </div>
+
+              <div class="pcontent">
+                <!-- ************************ Tabs Start ************************ -->
+                <div class="tabpanel">
+                  <ul class="nav nav-tabs pstabs">
+                    <li class="active">
+                      <a href="#about-project">About the project</a>
+                    </li>
+                    <li><a href="#costs">Costs</a></li>
+                    <li><a href="#faqs">FAQ's</a></li>
+                    <li>
+                      <a href="#news">News <i>4</i></a>
+                    </li>
+                    <li>
+                      <a href="#comments">Comments <i>57</i></a>
+                    </li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <!-- ************************ Details About Project ************************ -->
+
+                    <div class="tab-pane active" id="about-project">
+                      <h5>We are building a park at Birdcagewalk</h5>
+                      <p>
+                        Etiam id eleifend nisl. Fusce ultricies ultricies lorem,
+                        sit amet fringilla magna scelerisque non. Sed auctor
+                        facilisis est, a porttitor risus tempus sit amet.
+                        <a href="#">Pellentesque habitant morbi</a> tristique
+                        senectus et netus et malesuada fames ac turpis egestas.
+                        Nunc vel imperdiet nisl, sit amet semper libero. Morbi
+                        aliquam ornare lobortis. Nam nec fermentum erat.
+                      </p>
+
+                      <ul>
+                        <li>Aenean pharetra diam in nisl mattis</li>
+                        <li>Ut a lacinia metus</li>
+                        <li>Nunc ullamcorper varius metus</li>
+                        <li>Donec ut ligula vitae risus elementum tempor</li>
+                        <li>Etiam porta massa sit amet purus viverra</li>
+                      </ul>
+
+                      <p>
+                        Vestibulum a justo libero. Praesent vehicula id lectus
+                        semper hendrerit. Vestibulum tempus porta mi, sit amet
+                        blandit velit mattis nec. Nunc accumsan elementum
+                        gravida. Integer eu gravida massa. Maecenas ligula leo,
+                        feugiat a finibus ut, placerat a turpis. Ut viverra
+                        neque non suscipit imperdiet. Proin ut erat eleifend
+                        metus tristique rutrum ut at enim. Aliquam eget blandit
+                        dolor, ut interdum metus. Maecenas eros orci, congue
+                        quis urna eget, condimentum semper risus. Etiam feugiat
+                        rutrum viverra.
+                      </p>
+
+                      <figure>
+                        <img
+                          src="assets/images/projects/singe-7.jpg"
+                          alt="The Pulpit Rock"
+                        />
+                      </figure>
+
+                      <p>
+                        Etiam id eleifend nisl. Fusce ultricies ultricies lorem,
+                        sit amet fringilla magna scelerisque non. Sed auctor
+                        facilisis est, a porttitor risus tempus sit amet.
+                        Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada fames ac turpis egestas. Nunc vel imperdiet
+                        nisl, sit amet semper libero. Morbi aliquam ornare
+                        lobortis. Nam nec fermentum erat.
+                      </p>
+
+                      <h5>What does Phase 1 include?</h5>
+                      <ul>
+                        <li>Aenean pharetra diam in nisl mattis</li>
+                        <li>Ut a lacinia metus</li>
+                        <li>Nunc ullamcorper varius metus</li>
+                        <li>Donec ut ligula vitae risus elementum tempor</li>
+                        <li>Etiam porta massa sit amet purus viverra</li>
+                      </ul>
+
+                      <p>
+                        <strong>Aenean pharetra</strong> diam in nisl mattis,
+                        nec laoreet libero mollis. Ut a lacinia metus, non
+                        luctus diam. Nullam at nibh facilisis, ullamcorper ipsum
+                        ut, finibus magna. Etiam porta massa sit amet purus
+                        viverra, et lacinia lectus tempor.Aenean elit purus,
+                        imperdiet nec faucibus ut, finibus ac metus. Donec ut
+                        ligula vitae risus elementum tempor. Nunc ullamcorper
+                        varius metus, id ullamcorper dolor commodo ac.
+                      </p>
+
+                      <figure>
+                        <img
+                          src="assets/images/graph.png"
+                          alt="The Pulpit Rock"
+                        />
+                      </figure>
+
+                      <p>
+                        Vestibulum a justo libero. Praesent vehicula id lectus
+                        semper hendrerit. Vestibulum tempus porta mi, sit amet
+                        blandit velit mattis nec. Nunc accumsan elementum
+                        gravida. Integer eu gravida massa. Maecenas ligula leo,
+                        feugiat a finibus ut, placerat a turpis. Ut viverra
+                        neque non suscipit imperdiet. Proin ut erat eleifend
+                        metus tristique rutrum ut at enim. Aliquam eget blandit
+                        dolor, ut interdum metus.
+                        <a href="#">Maecenas eros orci</a> congue quis urna
+                        eget, condimentum semper risus. Etiam feugiat rutrum
+                        viverra.
+                      </p>
+
+                      <div class="videoWrapper">
+                        <iframe
+                          src="https://player.vimeo.com/video/136277304?title=0&amp;byline=0&amp;portrait=0"
+                        ></iframe>
+                      </div>
+
+                      <p>
+                        Etiam id eleifend nisl. Fusce ultricies ultricies lorem,
+                        sit amet fringilla magna scelerisque non. Sed auctor
+                        facilisis est, a porttitor risus tempus sit amet.
+                        Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada fames ac turpis egestas. Nunc vel imperdiet
+                        nisl, sit amet semper libero. Morbi aliquam ornare
+                        lobortis. Nam nec fermentum erat.
+                      </p>
+
+                      <h5>What else you can do for Birdcagewalk</h5>
+                      <p>
+                        Aenean pharetra diam in nisl mattis, nec laoreet libero
+                        mollis. Ut a lacinia metus, non luctus diam. Nullam at
+                        nibh facilisis, ullamcorper ipsum ut, finibus magna.
+                        Etiam porta massa sit amet purus viverra, et lacinia
+                        lectus tempor.Aenean elit purus, imperdiet nec faucibus
+                        ut, finibus ac metus. Donec ut ligula vitae risus
+                        elementum tempor. Nunc ullamcorper varius metus, id
+                        ullamcorper dolor commodo ac.
+                      </p>
+
+                      <p>
+                        Vestibulum a justo libero. Praesent vehicula id lectus
+                        semper hendrerit. Vestibulum tempus porta mi, sit amet
+                        blandit velit mattis nec. Nunc accumsan elementum
+                        gravida. Integer eu gravida massa. Maecenas ligula leo,
+                        feugiat a finibus ut, placerat a turpis. Ut viverra
+                        neque non suscipit imperdiet. Proin ut erat eleifend
+                        metus tristique rutrum ut at enim. Aliquam eget blandit
+                        dolor, ut interdum metus. Maecenas eros orci, congue
+                        quis urna eget, condimentum semper risus. Etiam feugiat
+                        rutrum viverra.
+                      </p>
+                    </div>
+
+                    <!-- ************************ Costs Chart ************************ -->
+
+                    <div class="tab-pane costs-detail" id="costs">
+                      <h5><i class="fa fa-tags"></i>Costs</h5>
+                      <ul>
+                        <li data-cost="420000" data-color="79FED1">
+                          Cost to build and plant boundary beds
+                          <span>$4,200,00</span>
+                        </li>
+                        <li data-cost="220000" data-color="5AF2BF">
+                          Cost to build and plant Natural Play garden
+                          <span>$2,200,00</span>
+                        </li>
+                        <li data-cost="220000" data-color="47DEAB">
+                          Cost to plant community orchard with 10 fruiting trees
+                          <span>$2,200,00</span>
+                        </li>
+                        <li data-cost="70000" data-color="34CC99">
+                          Other <span>$700,00</span>
+                        </li>
+                      </ul>
+                      <div class="cost-total">
+                        Total <span>$ 9,300,00 <span>USD</span></span>
+                      </div>
+                      <div id="total-barChart"><!--Total cost bar chart--></div>
+                    </div>
+
+                    <!-- ************************ Project FAQs ************************ -->
+
+                    <div class="tab-pane" id="faqs">
+                      <h5><i class="fa fa-question q-circle"></i>FAQ</h5>
+                      <div class="accordion" id="accordion-faq">
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a
+                              class="accordion-toggle"
+                              data-toggle="collapse"
+                              href="#collapseOne"
+                            >
+                              Pellentesque pharetra sapien non quam placerat
+                              vestibulum ?
+                              <span class="updown-cion"></span>
+                            </a>
+                          </div>
+                          <div
+                            id="collapseOne"
+                            class="accordion-body collapse in"
+                          >
+                            <div class="accordion-inner">
+                              <p>
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Etiam sagittis ante eget nisi tempus,
+                                elementum sollicitudin nulla lacinia Aenean sed
+                                odio ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                              <ul>
+                                <li>Aenean pharetra diam in nisl mattis</li>
+                                <li>Ut a lacinia metus</li>
+                                <li>Nunc ullamcorper varius metus</li>
+                                <li>
+                                  Donec ut ligula vitae risus elementum tempor
+                                </li>
+                                <li>
+                                  Etiam porta massa sit amet purus viverra
+                                </li>
+                              </ul>
+                              <p>
+                                Etiam sagittis ante eget nisi tempus, elementum
+                                sollicitudin nulla lacinia Aenean sed odio
+                                ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a
+                              class="accordion-toggle"
+                              data-toggle="collapse"
+                              href="#collapseTwo"
+                            >
+                              Pellentesque pharetra sapien non quam placerat
+                              vestibulum. Aliquam dignissim ex nec feugiat ?
+                              <span class="updown-cion"></span>
+                            </a>
+                          </div>
+                          <div id="collapseTwo" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                              <p>
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Etiam sagittis ante eget nisi tempus,
+                                elementum sollicitudin nulla lacinia Aenean sed
+                                odio ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                              <p>
+                                Etiam sagittis ante eget nisi tempus, elementum
+                                sollicitudin nulla lacinia Aenean sed odio
+                                ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a
+                              class="accordion-toggle"
+                              data-toggle="collapse"
+                              href="#collapseThree"
+                            >
+                              Pellentesque pharetra sapien non quam placerat
+                              vestibulum ?
+                              <span class="updown-cion"></span>
+                            </a>
+                          </div>
+                          <div
+                            id="collapseThree"
+                            class="accordion-body collapse"
+                          >
+                            <div class="accordion-inner">
+                              <p>
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Etiam sagittis ante eget nisi tempus,
+                                elementum sollicitudin nulla lacinia Aenean sed
+                                odio ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                              <p>
+                                Etiam sagittis ante eget nisi tempus, elementum
+                                sollicitudin nulla lacinia Aenean sed odio
+                                ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- ************************ Project News ************************ -->
+
+                    <div class="tab-pane" id="news">
+                      <h5><i class="fa fa-newspaper-o"></i>News</h5>
+
+                      <div class="accordion" id="accordion-news">
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a
+                              class="accordion-toggle"
+                              data-toggle="collapse"
+                              href="#collapse1"
+                            >
+                              Pellentesque pharetra sapien non quam placerat
+                              vestibulum.
+                              <span class="updown-cion"></span>
+                            </a>
+                          </div>
+                          <div
+                            id="collapse1"
+                            class="accordion-body collapse in"
+                          >
+                            <div class="accordion-inner">
+                              <p>
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Etiam sagittis ante eget nisi tempus,
+                                elementum sollicitudin nulla lacinia Aenean sed
+                                odio ipsum. Nam tincidunt bibendum quam.
+                              </p>
+                              <p>
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                              <ul>
+                                <li>Aenean pharetra diam in nisl mattis</li>
+                                <li>Ut a lacinia metus</li>
+                                <li>Nunc ullamcorper varius metus</li>
+                                <li>
+                                  Donec ut ligula vitae risus elementum tempor
+                                </li>
+                                <li>
+                                  Etiam porta massa sit amet purus viverra
+                                </li>
+                              </ul>
+                              <p>
+                                <strong>Pellentesque pharetra</strong> sapien
+                                non quam placerat vestibulum. Aliquam dignissim
+                                ex nec feugiat condimentum. Sed iaculis magna
+                                mi, sed semper ex semper eu. Etiam sagittis ante
+                                eget nisi tempus, elementum sollicitudin nulla
+                                lacinia Aenean sed odio ipsum. Nam tincidunt
+                                bibendum quam, sed ultricies nisl tristique
+                                eget. Maecenas facilisis sollicitudin magna at
+                                fringilla. Pellentesque pharetra sapien non quam
+                                placerat vestibulum. Aliquam dignissim ex nec
+                                feugiat condimentum. Sed iaculis magna mi, sed
+                                semper ex semper eu. Vestibulum auctor mi sed.
+                              </p>
+                              <p>
+                                Etiam sagittis ante eget nisi tempus, elementum
+                                sollicitudin nulla lacinia Aenean sed odio
+                                ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                              <figure>
+                                <img
+                                  src="assets/images/projects/news-img.jpg"
+                                  alt="News"
+                                  title=""
+                                />
+                              </figure>
+                              <p>
+                                Etiam sagittis ante eget nisi tempus, elementum
+                                sollicitudin nulla lacinia Aenean sed odio
+                                ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a
+                              class="accordion-toggle"
+                              data-toggle="collapse"
+                              href="#collapse2"
+                            >
+                              Pellentesque pharetra sapien non quam placerat
+                              vestibulum. Aliquam dignissim ex nec feugiat.
+                              <span class="updown-cion"></span>
+                            </a>
+                          </div>
+                          <div id="collapse2" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                              <p>
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Etiam sagittis ante eget nisi tempus,
+                                elementum sollicitudin nulla lacinia Aenean sed
+                                odio ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                              <p>
+                                Etiam sagittis ante eget nisi tempus, elementum
+                                sollicitudin nulla lacinia Aenean sed odio
+                                ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a
+                              class="accordion-toggle"
+                              data-toggle="collapse"
+                              href="#collapse3"
+                            >
+                              Pellentesque pharetra sapien non quam placerat
+                              vestibulum.
+                              <span class="updown-cion"></span>
+                            </a>
+                          </div>
+                          <div id="collapse3" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                              <p>
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Etiam sagittis ante eget nisi tempus,
+                                elementum sollicitudin nulla lacinia Aenean sed
+                                odio ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                              <p>
+                                Etiam sagittis ante eget nisi tempus, elementum
+                                sollicitudin nulla lacinia Aenean sed odio
+                                ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                              <p>
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Etiam sagittis ante eget nisi tempus,
+                                elementum sollicitudin nulla lacinia Aenean sed
+                                odio ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                              <p>
+                                Etiam sagittis ante eget nisi tempus, elementum
+                                sollicitudin nulla lacinia Aenean sed odio
+                                ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a
+                              class="accordion-toggle"
+                              data-toggle="collapse"
+                              href="#collapse4"
+                            >
+                              Pellentesque pharetra sapien non quam placerat
+                              vestibulum. Aliquam dignissim ex nec feugiat.
+                              <span class="updown-cion"></span>
+                            </a>
+                          </div>
+                          <div id="collapse4" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                              <p>
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Etiam sagittis ante eget nisi tempus,
+                                elementum sollicitudin nulla lacinia Aenean sed
+                                odio ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                              <p>
+                                Etiam sagittis ante eget nisi tempus, elementum
+                                sollicitudin nulla lacinia Aenean sed odio
+                                ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                              <p>
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Etiam sagittis ante eget nisi tempus,
+                                elementum sollicitudin nulla lacinia Aenean sed
+                                odio ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                              <p>
+                                Etiam sagittis ante eget nisi tempus, elementum
+                                sollicitudin nulla lacinia Aenean sed odio
+                                ipsum. Nam tincidunt bibendum quam, sed
+                                ultricies nisl tristique eget. Maecenas
+                                facilisis sollicitudin magna at fringilla.
+                                Pellentesque pharetra sapien non quam placerat
+                                vestibulum. Aliquam dignissim ex nec feugiat
+                                condimentum. Sed iaculis magna mi, sed semper ex
+                                semper eu. Vestibulum auctor mi sed.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- ************************ Project Comments ************************ -->
+
+                    <div class="tab-pane" id="comments">
+                      <h5><i class="fa fa-comments"></i>Comments</h5>
+
+                      <div class="detailBox">
+                        <div class="actionBox">
+                          <ul class="commentList">
+                            <li>
+                              <div class="commenterImage">
+                                <img
+                                  src="assets/images/funder_1.jpg"
+                                  alt="Funder"
+                                />
+                              </div>
+                              <div class="commentText">
+                                <p class="">Hello this is a test comment.</p>
+                                <span class="date sub-text"
+                                  >on July 24th, 2015</span
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <div class="commenterImage">
+                                <img
+                                  src="assets/images/funder_2.jpg"
+                                  alt="Funder"
+                                />
+                              </div>
+                              <div class="commentText">
+                                <p class="">
+                                  Hello this is a test comment and this comment
+                                  is particularly very long and it goes on and
+                                  on and on.
+                                </p>
+                                <span class="date sub-text"
+                                  >on July 24th, 2015</span
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <div class="commenterImage">
+                                <img
+                                  src="assets/images/funder_3.jpg"
+                                  alt="Funder"
+                                />
+                              </div>
+                              <div class="commentText">
+                                <p class="">Hello this is a test comment.</p>
+                                <span class="date sub-text"
+                                  >on July 24th, 2015</span
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <div class="commenterImage">
+                                <img
+                                  src="assets/images/funder_4.jpg"
+                                  alt="Funder"
+                                />
+                              </div>
+                              <div class="commentText">
+                                <p class="">
+                                  Hello this is a test comment and this comment
+                                  is particularly very long and it goes on and
+                                  on and on. Hello this is a test comment and
+                                  this comment is particularly very long and it
+                                  goes on and on and on.
+                                </p>
+                                <span class="date sub-text"
+                                  >on July 24th, 2015</span
+                                >
+                              </div>
+                            </li>
+                          </ul>
+                          <p>&nbsp;</p>
+                          <h5>Leave A Reply</h5>
+                          <form
+                            class="form-inline"
+                            action="project-single.html"
+                            method="post"
+                          >
+                            <div class="form-group">
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Your Name"
+                              />
+                            </div>
+                            <div class="form-group">
+                              <input
+                                class="form-control"
+                                type="text"
+                                placeholder="Your Email"
+                              />
+                            </div>
+                            <div class="form-group">
+                              <textarea
+                                class="form-control"
+                                placeholder="Your Comments"
+                              ></textarea>
+                            </div>
+                            <div class="form-group">
+                              <button type="button" class="btn btn-5 blue">
+                                Add Comment
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tabs End -->
+              </div>
+            </div>
+
+            <!-- ************************ Right Side Area ************************ -->
+
+            <div class="col-lg-4">
+              <div class="sidebar">
+                <!-- Project Progress -->
+
+                <div class="sidebar-item">
+                  <div class="project-progress">
+                    <div class="popular-data data-single">
+                      <img src="assets/images/funder_1.jpg" alt="Funder" />
+                      <div
+                        class="pie_progress"
+                        role="progressbar"
+                        data-goal="75"
+                        data-barcolor="#ef6342"
+                        data-barsize="7.1"
+                      >
+                        <div class="pie_progress__number">0%</div>
+                        <div class="pie_progress__label">Completed</div>
+                      </div>
+                    </div>
+                    <div class="popular-details">
+                      <ul>
+                        <li class="last"><strong>$7,000,00</strong> Funded</li>
+                        <li><strong>175</strong> Backers</li>
+                        <li><strong>12</strong> Days Left</li>
+                      </ul>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+
+                <!-- We Need Volunteers -->
+
+                <div class="sidebar-item">
+                  <div class="w-title">We Need Volunteers!</div>
+                  <div style="padding: 15px">
+                    <p>
+                      Etiam id eleifend nisl. Fusce ultricies ultricies lorem,
+                      sit amet fringilla magna scelerisque non. Sed auctor
+                      facilisis est, a porttitor risus tempus sit amet.
+                      Pellentesque habitant morbi tristique senectus et netus et
+                      malesuada fames ac turpis egestas. Nunc vel imperdiet
+                      nisl, sit amet semper libero.
+                    </p>
+                    <div class="list-info">
+                      <p>Bibiana Serpa <span>Responsive! Park Project</span></p>
+                    </div>
+                    <div class="side-box">
+                      <form action="project-single.html">
+                        <div class="form-group">
+                          <label for="amount"
+                            ><strong>Your Contribution</strong></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="amount"
+                            placeholder="Enter an amount"
+                          />
+                        </div>
+                        <div style="text-align: center">
+                          <button
+                            type="button"
+                            class="btn btn-3 green"
+                            style="margin: 10px 0px 5px 0px"
+                          >
+                            Contribute Now
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Select a Perk -->
+
+                <div class="sidebar-item">
+                  <div class="w-title">Select a Perk</div>
+                  <div class="perk-wrapper">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <span class="perk-price"
+                            ><strong>$50</strong> USD</span
+                          >
+                          <span class="perk-type">Featured</span>
+                          <span class="clear"></span>
+                          <span class="perk-title"
+                            >Limited Birdcagewalk T-shirts</span
+                          >
+                          <span class="perk-txt"
+                            >Etiam id eleifend nisl. Fusce ultricies ultricies
+                            lorem, sit amet fringilla magna scelerisque non. Sed
+                            auctor facilisis est, a porttitor risus tempus sit
+                            amet. Pellentesque habitant morbi tristique senectus
+                            et netus et malesuada fames ac turpis egestas. Nunc
+                            vel imperdiet nisl, sit amet semper libero.</span
+                          >
+                          <span class="perk-claimed">35 claimed</span>
+                          <span class="perk-delivery"
+                            ><strong>Estimated delivery:</strong> November
+                            2015</span
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="perk-price"
+                            ><strong>$10</strong> USD</span
+                          >
+                          <span class="clear"></span>
+                          <span class="perk-title">Walking Tours 8/15</span>
+                          <span class="perk-txt"
+                            >Etiam id eleifend nisl. Fusce ultricies ultricies
+                            lorem, sit amet fringilla magna scelerisque non. Sed
+                            auctor facilisis est, a porttitor risus tempus sit
+                            amet. Pellentesque habitant morbi tristique senectus
+                            et netus et malesuada fames ac turpis egestas. Nunc
+                            vel imperdiet nisl, sit amet semper libero.</span
+                          >
+                          <span class="perk-claimed">2 out of 90 claimed</span>
+                          <span class="perk-delivery"
+                            ><strong>Estimated delivery:</strong> November
+                            2015</span
+                          >
+                        </a>
+                      </li>
+                      <li class="perk-disabled">
+                        <a href="#">
+                          <span class="perk-price"
+                            ><strong>$50</strong> USD</span
+                          >
+                          <span class="perk-type">Sold Out</span>
+                          <span class="clear"></span>
+                          <span class="perk-title">Multicombiloop Lock</span>
+                          <span class="perk-txt"
+                            >Etiam id eleifend nisl. Fusce ultricies ultricies
+                            lorem, sit amet fringilla magna scelerisque non. Sed
+                            auctor facilisis est, a porttitor risus tempus sit
+                            amet. Pellentesque habitant morbi tristique senectus
+                            et netus et malesuada fames ac turpis egestas. Nunc
+                            vel imperdiet nisl, sit amet semper libero.</span
+                          >
+                          <span class="perk-claimed">3 out of 3 claimed</span>
+                          <span class="perk-delivery"
+                            ><strong>Estimated delivery:</strong> November
+                            2015</span
+                          >
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="perk-price"
+                            ><strong>$125</strong> USD</span
+                          >
+                          <span class="clear"></span>
+                          <span class="perk-title">T-shirt Package</span>
+                          <span class="perk-txt"
+                            >Etiam id eleifend nisl. Fusce ultricies ultricies
+                            lorem, sit amet fringilla magna scelerisque non. Sed
+                            auctor facilisis est, a porttitor risus tempus sit
+                            amet. Pellentesque habitant morbi tristique senectus
+                            et netus et malesuada fames ac turpis egestas. Nunc
+                            vel imperdiet nisl, sit amet semper libero.</span
+                          >
+                          <span class="perk-claimed">35 claimed</span>
+                          <span class="perk-delivery"
+                            ><strong>Estimated delivery:</strong> November
+                            2015</span
+                          >
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Find This Project -->
+
+                <div class="sidebar-item">
+                  <div class="w-title">Find This Project On</div>
+                  <div class="find-project">
+                    <ul>
+                      <li>
+                        <a
+                          target="_blank"
+                          href="https://www.facebook.com/"
+                          class="fb transition-all"
+                          title="Facebook"
+                          ><i class="fa fa-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          href="https://twitter.com/"
+                          class="tw transition-all"
+                          title="Twitter"
+                          ><i class="fa fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          href="https://www.youtube.com/"
+                          class="yt transition-all"
+                          title="Youtube"
+                          ><i class="fa fa-youtube"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          href="#"
+                          class="wb transition-all"
+                          title="Website"
+                          ><i class="fa fa-link"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ************************ Send your idea ************************ -->
+
+      <section class="send-us">
+        <article class="container">
+          <h3>Have a Community Project in Need of Funding?</h3>
+          <a href="start.html" class="btn btn-3 green">Send to us</a>
+        </article>
+      </section>
+
+      <!-- ************************ Footer ************************ -->
+
+      <!--Footer Section-->
+
+      <footer>
+        <div class="container footer-links">
+          <div class="row">
+            <div class="col-lg-4 footer-about">
+              <div id="logo" style="padding-bottom: 20px">
+                <img
+                  src="assets/images/footer-logo.png"
+                  class="footer-logo"
+                  alt="FundMyTuition"
+                />
+              </div>
+              <p style="margin-top: 60px">
+                FundMyTuition is a global public benefit Organization, focused
+                on education, intended to run in major zonal regions across the
+                globe.
+              </p>
+              <p>
+                Our mission is to reduce the level of anxiety and hassles
+                students face in sourcing for their tuition or paying off their
+                loans as well as aid quality and innovative Education/Research
+              </p>
+              <ul>
+                <li title="Facebook">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li title="Twitter">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li title="Youtube">
+                  <a href="#"><i class="fa fa-youtube-play"></i></a>
+                </li>
+                <li title="LinkedIn">
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li title="Google+">
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <h5>Campaign</h5>
+              <ul>
+                <li><a href="start.html">Send a project</a></li>
+                <li><a href="campaign.html">Explore</a></li>
+                <li><a href="fees.html">Fees</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="process.html">How it works</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <h5>Important Links</h5>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="faqs.html">Faq's</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h5>Videos</h5>
+              <ul>
+                <li style="text-decoration: none">
+                  <div
+                    onclick="showVideo('youtubeembed', 'overlay')"
+                    id="overlay"
+                  >
+                    <!--        <img id="youtubeimage" onclick="showVideo('youtubeembed', 'overlay')" class="youtubeimage" src="assets/images/logo.png" alt="FundMyTuition" width="80%" height="30%">-->
+                    <iframe
+                      width="80%"
+                      height="30%"
+                      id="youtubeembed"
+                      class="youtubeembed"
+                      src="https://www.youtube.com/embed/O1v0VtHC3-s?rel=0&amp;controls=0&amp;showinfo=0"
+                      frameborder="0"
+                      allow="autoplay"
+                      allowfullscreen="allowfullscreen"
+                    ></iframe>
+                  </div>
+                  <div class="morevids">
+                    <a
+                      href="https://www.youtube.com/channel/UCYCBZEAdFI98exaZLJDmX2g?view="
+                      class="btn btn-5 yellow"
+                      ><strong>More Videos</strong></a
+                    >
+                  </div>
+                  <!--			<iframe width="80%" height="30%" src="https://www.youtube.com/embed/channel?&list=UCYCBZEAdFI98exaZLJDmX2g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+                  <!--			<iframe src="http://www.youtube.com/embed/?user="UCYCBZEAdFI98exaZLJDmX2&list="YOURCHANNELNAME" width="80%" height="30%" class="video-container lightbox icon-play" src="assets/images/logo.png" alt="Video"></iframe>-->
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2"></div>
+          </div>
+        </div>
+        <div class="copyrights">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 copyright-text">
+                <a href="index.html">
+                  &copy; 2018 FundMyTuition Powered by BIL | All rights
+                  reserved.
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for JavaScript plugins) -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/migrate.js"></script>
+
+    <!-- Bootstrap Javascript -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Progressbar -->
+    <script
+      type="text/javascript"
+      src="assets/js/pieprogress/scripts/rainbow.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/pieprogress/scripts/jquery-asPieProgress.js"
+    ></script>
+
+    <!-- Revolution Slider -->
+    <script
+      type="text/javascript"
+      src="assets/js/slider-revolution/rs-plugin/js/jquery.themepunch.plugins.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/slider-revolution/rs-plugin/js/jquery.themepunch.revolution.min.js"
+    ></script>
+
+    <!-- Carousels js -->
+    <script
+      type="text/javascript"
+      src="assets/js/bxslider/jquery.bxslider.min.js"
+    ></script>
+
+    <!-- Google Maps -->
+    <script
+      type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;v=3.exp"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/maps/scripts/jquery.gmap.min.js"
+    ></script>
+
+    <!--Custom Scroll Bar -->
+    <script type="text/javascript" src="assets/js/jquery.scroll.js"></script>
+
+    <!-- Grayscale Images -->
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.hoverizr.min.js"
+    ></script>
+
+    <!-- Custom Settings -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+
+    <!-- Jquery Plugins - (For Selectbox, EventCountDown) -->
+    <script type="text/javascript" src="assets/js/plugin.js"></script>
+
+    <!-- Event Countdown -->
+    <script type="text/javascript" src="assets/js/countdown.js"></script>
+
+    <!-- Retina Script -->
+    <script type="text/javascript" src="assets/js/retina.min.js"></script>
+  </body>
+</html>
