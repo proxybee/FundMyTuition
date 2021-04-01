@@ -707,12 +707,12 @@ span.intro-icon {
 	margin: 0 auto;
 	line-height: 116px;
 	border-radius: 150px;
-	border: solid 1px #3398CC;
+	border: solid 1px #643bf8;
 }
 span.intro-icon i {
 	width: 114px;
 	height: 114px;
-	color: #3398CC;
+	color: #643bf8;
 	display: block;
 	font-size: 48px;
 	line-height: 114px;
@@ -853,7 +853,7 @@ span.intro-icon i {
 	font-size: 12px;
 	position: absolute;
 	text-align: center;
-	background: #3398CC;
+	background: #643bf8;
 	border-radius: 50px;
 	vertical-align: middle;
 	transition: all 0.3s linear;
@@ -1093,8 +1093,8 @@ section.gray #popular.style-2 .row {
 	border-bottom-right-radius: 50px;
 }
 #popular.style-2 .pslider-btn-cnt > span:hover {
-	background: #3398CC;
-	border: solid 1px #3398CC;
+	background: #643bf8;
+	border: solid 1px #643bf8;
 }
 #popular.style-2 .pslider-btn-cnt > span a {
 	color: #E2E0E0;
@@ -1165,7 +1165,6 @@ section.gray #popular.style-2 .row {
 	padding:30px 20px;
 	border-radius:1px;
 	background:rgba(255, 255, 255, 1);
-	height: 300px;
 }
 
 .upcoming-events > div > div h4 {
@@ -1177,7 +1176,7 @@ section.gray #popular.style-2 .row {
 	margin:0 auto;
 	display:block;
 	margin-top:5px;
-	border-bottom:solid 1px #34CC99;
+	border-bottom:solid 1px #0642cd;
 }
 
 .upcoming-events > div > div.green h4 span {border-bottom:solid 1px #F2D031;}
@@ -1288,8 +1287,8 @@ section.gray #popular.style-2 .row {
 	margin-top: 4px;
 }
 .blog-btn-cnt span:hover {
-	background: #3398CC;
-	border: solid 1px #3398CC;
+	background: #643bf8;
+	border: solid 1px #643bf8;
 }
 .blog-btn-cnt span:hover a {
 	color: #FFF;
@@ -1428,14 +1427,14 @@ section.map-container {
 	text-align: center;
 	padding: 15px 50px;
 	border-radius: 50px;
-	background: #34CC99;
+	background: #0642cd;
 	transition: all 0.3s linear;
 	-moz-transition: all 0.3s linear;
 	-webkit-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
 }
 .map-container:hover #map-desc h3 {
-	background: #34CC99;
+	background: #0642cd;
 }
 .gm-style img {
 	max-width: inherit !important;
@@ -1561,7 +1560,7 @@ footer a, footer p {
 	color: #919191;
 }
 footer a:hover {
-	color: #3398CC;
+	color: #643bf8;
 }
 footer .footer-links {
 	padding-top: 60px;
@@ -1672,7 +1671,7 @@ footer .copyrights .newsletter form input[type="submit"], footer .copyrights .ne
 }
 footer .copyrights .newsletter form input[type="submit"]:hover, footer .copyrights .newsletter form button[type="submit"]:hover {
 	color: #CFCFCF;
-	background: #3398CC;
+	background: #643bf8;
 }
 
 /************************ SubPages Styles ************************/
@@ -1869,7 +1868,7 @@ section.team {
 }
 .team-social ul li a:hover {
 	color: #FFF;
-	background: #3398CC;
+	background: #643bf8;
 	border: solid 1px transparent;
 }
 
@@ -2311,7 +2310,7 @@ i.q-circle {
 	border-radius: 50px;
 }
 .list-info p {
-	color: #34CC99;
+	color: #0642cd;
 	font-weight: 600;
 	text-transform: uppercase;
 }
@@ -2682,7 +2681,7 @@ iframe {
 	float: left;
 	margin-left: 0px !important;
 }
-.moreperks {
+.moreperks, .morecosts {
 	margin-top: 30px;
 	padding-top: 25px;
 	border-top: solid 1px #f2d031;

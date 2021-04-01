@@ -981,11 +981,17 @@ function addperk()
 	$("#add-more-perks").append("<div class='moreperks'>"+perkelEments+"</div>");
 }
 
+function addcost()
+{
+	var costEl = $("#cost-elements").html();
+	$("#add-more-expense").append("<div class='morecosts'>"+costEl+"</div>");
+}
+
 function addimage()
 {
 	var imageNumber = parseFloat($('#imgNumber').val());
 	$('#imgNumber').val(imageNumber+1);
-	var imageEments = '<div class="form-left selectimage image-fld-add" id="imgupload-'+(imageNumber+1)+'"> <input type="text" value="" class="form-control" placeholder="Upload Image"> <button type="button" class="imageUploadBtn">Choose File</button> <input type="file" name="galleryimg[]" /> </div>';
+	var imageEments = '<div class="selectimage image-fld-add" id="imgupload-'+(imageNumber+1)+'"> <input type="text" value="" class="form-control" placeholder="Upload Image"> <button type="button" class="imageUploadBtn">Choose File</button> <input type="file" name="galleryimg[]" /> </div>';
 	$("#add-image-field-cnt").append(imageEments);
 }
 
@@ -1035,4 +1041,21 @@ this.each(function(){this._animateNumberSetter=b.numberStep}),g=a.complete;a.com
 	
 			});
 	})
+
+	/***********************************************************
+text show more
+************************************************************/
+$(".show-more").click(function () {
+    if($(".text").hasClass("show-more-height")) {
+        $(this).text("See Less");
+    } else {
+        $(this).text("See More");
+    }
+
+    $(".text").toggleClass("show-more-height");
+});
+
+	
+
+
 

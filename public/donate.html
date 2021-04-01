@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="keywords"
-      content="Tuition Funding Fundraising Education Projects FundMyTuition Crowdfunding College Career Fees School Institution"
+      content="Tuition Funding Fundraising Education Projects FundMyTuition Crowdfunding College Career Fees School Institution Fees"
     />
     <meta
       name="description"
@@ -71,22 +71,34 @@
     <!-- Your Custom Styles -->
     <link rel="stylesheet" type="text/css" href="assets/css/my-styles.css" />
 
+    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
 
   <body>
     <div class="wrapper">
       <!-- Header -->
-     <!-- /* <header>
+      <header>
         <div class="container">
           <div id="logo">
             <a href="index.html"
               ><img src="assets/images/logo.png" alt="FundMyTuition" />
               <h6
-                style="position:absolute; margin-left:30px; font-size:12px; text-transform:none; width:1px; word-wrap:break;"
+                style="
+                  position: absolute;
+                  margin-left: 30px;
+                  font-size: 12px;
+                  text-transform: none;
+                  width: 1px;
+                  word-wrap: break;
+                "
               >
                 Lite
-              </h6></a
-            >
+              </h6>
+            </a>
           </div>
           <button type="button" class="collapsed" id="navbar-toggle">
             <i class="icon fa fa-bars"></i>
@@ -119,8 +131,7 @@
                             LinkedIn
                           </button>
                           <button class="btn btn-gmail">
-                            <i class="fa fa-google"></i> &nbsp; Login with
-                            gmail
+                            <i class="fa fa-google"></i> &nbsp; Login with gmail
                           </button>
                           <hr />
                           <img src="assets/images/or.png" alt="OR" />
@@ -138,12 +149,12 @@
                         <button type="submit" class="btn btn-sigin">
                           Log me in!
                         </button>
-                        <br style="clear:both;" />
+                        <br style="clear: both" />
                         <hr />
                         <br />
                         <a class="link" href="#">Forgot password?</a
                         ><span class="text-gray"> - New here? </span>
-                        <a class="link" href="#join">Join</a>
+                        <a class="link" href="#">Join</a>
                       </form>
                     </div>
                   </li>
@@ -162,7 +173,8 @@
                             LinkedIn
                           </button>
                           <button class="btn btn-gmail">
-                            <i class="fa fa-google"></i> &nbsp; Register with gmail
+                            <i class="fa fa-google"></i> &nbsp; Register with
+                            gmail
                           </button>
                           <hr />
                           <img src="assets/images/or.png" alt="OR" />
@@ -188,7 +200,7 @@
                         <button type="submit" class="btn btn-join">
                           Join FundMyTuition!
                         </button>
-                        <br style="clear:both;" />
+                        <br style="clear: both" />
                         <hr />
                         <br />
                         <a class="link" href="#">Forgot password?</a
@@ -197,7 +209,9 @@
                       </form>
                     </div>
                   </li>
-                  <li><a href="donate.html" class="btn btn-4 blue">Donate</a></li>
+                  <li>
+                    <a href="donate.html" class="btn btn-4 blue">Donate</a>
+                  </li>
                 </ul>
               </div>
               <div class="search-box border-right">
@@ -217,89 +231,54 @@
             </div>
           </div>
         </div>
-      </header> -->
-      <!--login Section -->
+      </header>
+
+      <!--Header Section -->
       <section class="header-bottom">
         <article>
           <div class="container">
-            <h1> login | Register </h1>
+            <h1>Donate</h1>
           </div>
         </article>
       </section>
-      <!-- ************************ Form ************************ -->
-      <section class="gray login-page" id="login-page">
+      <!-- ************************ Breadcrumbs ************************ -->
+      <section class="breadcrumb">
         <article class="container">
           <div class="row">
-            <div class="col-lg-12">
-              <form action="index.html" method="post">
-                <div class="form-user">
-                  <div class="form-group">
-                    <h3>Login</h3>
-                    <button class="btn btn-linkedin">
-                      <i class="fa fa-linkedin"></i> &nbsp; Login with
-                      LinkedIn
-                    </button>
-                    <button class="btn btn-gmail">
-                      <i class="fa fa-google"></i> &nbsp; Log in with gmail
-                    </button>
-                    <hr />
-                    <img src="assets/images/or.png" alt="OR" />
-                    <input id="email" type="text" placeholder="Your email" value=""/>
-                    <input id="password" type="text" placeholder="Your password" value="" />
-                  </div>
-                  <span class="text-gray remember"
-                    ><input type="checkbox" id="remember" value="" />
-                    <label for="remember">Remember me</label></span
-                  >
-                  <button type="submit" class="btn btn-user">Log me in!</button>
-                  <br style="clear:both;" />
-                  <hr />
-                  <br />
-                  <a class="link" href="#">Forgot password?</a
-                  ><span class="text-gray"> - New here? </span>
-                  <a class="link" href="#join-page">Join</a>
-                </div>
-              </form>
+            <div class="col-lg-6">
+              <ul>
+                <li><span class="fa fa-home"></span>&nbsp; You are here:</li>
+                <li><a href="index.html">Home</a></li>
+                <li class="fa fa-angle-right"></li>
+                <li>Donate</li>
+              </ul>
             </div>
+            <!--<div class="col-lg-6 align-right sub-menu social">
+          <ul>
+            <li><i class="fa fa-map-marker"></i> &nbsp;Institution London, UK &nbsp;&nbsp;</li>
+            <li>&nbsp;&nbsp;<a href="#"><span class="icon-community"></span> &nbsp; Community</a></li>
+          </ul>
+        </div>-->
           </div>
         </article>
       </section>
-<!-- Join -->
-      <section class="gray join-page" style="display:none" id="join-page">
+      <!--  Container -->
+      <section class="gray">
+        <article class="container feespage"></article>
+      </section>
+
+      <!-- ************************ Google Maps ************************ -->
+
+      <!-- <section class="map-container">
+    <div id="contact-map"></div>
+  </section>-->
+
+      <!-- ************************ Send your idea ************************ -->
+
+      <section class="send-us">
         <article class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <form action="index.html" method="post">
-                <div class="form-user">
-                  <div class="form-group">
-                    <h3>Register</h3>
-                    <button class="btn btn-linkedin">
-                      <i class="fa fa-linkedin"></i> &nbsp; Register with
-                      LinkedIn
-                    </button>
-                    <button class="btn btn-gmail">
-                      <i class="fa fa-google"></i> &nbsp; Register with gmail
-                    </button>
-                    <hr />
-                    <img src="assets/images/or.png" alt="OR" />
-                    <input id="email" type="text" placeholder="Your email" value=""/>
-                    <input id="password" type="text" placeholder="Your password" value="" />
-                    <input id="confirm-password" type="text" placeholder="Confirm Your password" value="" />
-                  </div>
-                  <span class="text-gray remember"
-                    ><input type="checkbox" id="remember" value="" />
-                    <label for="remember">I have read and understood the terms and Conditions</label></span
-                  >
-                  <button type="submit" class="btn btn-user">Register me!</button>
-                  <br style="clear:both;" />
-                  <hr />
-                  <br />
-                  <span class="text-gray"> - Already Registerd? </span>
-                  <a class="link" href="#login-page">Login</a>
-                </div>
-              </form>
-            </div>
-          </div>
+          <h3>Have an Edu-Project in Need of Funding?</h3>
+          <a href="start.html" class="btn btn-3 yellow">Start Campaign</a>
         </article>
       </section>
 
@@ -309,16 +288,16 @@
         <div class="container footer-links">
           <div class="row">
             <div class="col-lg-4 footer-about">
-              <div id="logo" style="padding-bottom:20px;">
+              <div id="logo" style="padding-bottom: 20px">
                 <img
                   src="assets/images/footer-logo.png"
                   class="footer-logo"
                   alt="FundMyTuition"
                 />
               </div>
-              <p style="margin-top:60px;">
+              <p style="margin-top: 60px">
                 FundMyTuition is a global public benefit Organization, focused
-                on education, intended to run in major zonal regions across the
+                on education, intended run in major zonal regions across the
                 globe.
               </p>
               <p>
@@ -367,32 +346,14 @@
             <div class="col-lg-4">
               <h5>Videos</h5>
               <ul>
-                <li style="text-decoration:none;">
-                  <div
-                    onclick="showVideo('youtubeembed', 'overlay')"
-                    id="overlay"
-                  >
-                    <!--        <img id="youtubeimage" onclick="showVideo('youtubeembed', 'overlay')" class="youtubeimage" src="assets/images/logo.png" alt="FundMyTuition" width="80%" height="30%">-->
-                    <iframe
-                      width="80%"
-                      height="30%"
-                      id="youtubeembed"
-                      class="youtubeembed"
-                      src="https://www.youtube.com/embed/O1v0VtHC3-s?rel=0&amp;controls=0&amp;showinfo=0"
-                      frameborder="0"
-                      allow="autoplay"
-                      allowfullscreen="allowfullscreen"
-                    ></iframe>
-                  </div>
-                  <div class="morevids">
-                    <a
-                      href="https://www.youtube.com/channel/UCYCBZEAdFI98exaZLJDmX2g?view="
-                      class="btn btn-5 yellow"
-                      ><strong>More Videos</strong></a
-                    >
-                  </div>
-                  <!--			<iframe width="80%" height="30%" src="https://www.youtube.com/embed/channel?&list=UCYCBZEAdFI98exaZLJDmX2g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-                  <!--			<iframe src="http://www.youtube.com/embed/?user="UCYCBZEAdFI98exaZLJDmX2&list="YOURCHANNELNAME" width="80%" height="30%" class="video-container lightbox icon-play" src="assets/images/logo.png" alt="Video"></iframe>-->
+                <li style="text-decoration: none">
+                  <iframe
+                    src="http://www.youtube.com/embed/?listType=user_uploads&list=YOURCHANNELNAME"
+                    width="80%"
+                    height="30%"
+                    class="video-container lightbox icon-play"
+                    ><img src="assets/images/logo.png" alt="Video"
+                  /></iframe>
                 </li>
               </ul>
             </div>
@@ -403,10 +364,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-6 copyright-text">
-                <a href="index.html">
-                  &copy; 2018 FundMyTuition Powered by BIL | All rights
-                  reserved.
-                </a>
+                &copy; 2018 FundMyTuition Powered by BIL | All rights reserved.
               </div>
             </div>
           </div>

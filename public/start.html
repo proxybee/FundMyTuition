@@ -98,8 +98,8 @@
             <nav class="main-nav">
               <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="start.html">Start Campaign</a></li>
+                <li><a href="howitworks.html">How It Works</a></li>
+                <li><a href="start.html">Start</a></li>
                 <li><a href="campaign.html">Explore Campaigns</a></li>
               </ul>
             </nav>
@@ -113,7 +113,7 @@
                       <div class="reverse"></div>
                       <div class="box-reverse left"></div>
                       <div class="box-reverse right"></div>
-                      <form action="index.html" method="post">
+                      <form action="" method="post">
                         <div class="form-group">
                           <h3>Login</h3>
                           <button class="btn btn-linkedin">
@@ -156,7 +156,7 @@
                       <div class="reverse"></div>
                       <div class="box-reverse left"></div>
                       <div class="box-reverse right"></div>
-                      <form action="index.html" method="post">
+                      <form action="" method="post">
                         <div class="form-group">
                           <h3>My Account</h3>
                           <button class="btn btn-linkedin">
@@ -199,11 +199,11 @@
                       </form>
                     </div>
                   </li>
-                  <li><a href="#" class="btn btn-4 blue">Donate</a></li>
+                  <li><a href="donate.html" class="btn btn-4 blue">Donate</a></li>
                 </ul>
               </div>
               <div class="search-box border-right">
-                <form method="get" action="index.html">
+                <form method="get" action="">
                   <input
                     type="text"
                     value="Search Here"
@@ -234,9 +234,9 @@
             <div class="col-lg-12">
               <ul>
                 <li><span class="fa fa-home"></span>&nbsp; You are here:</li>
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="fa fa-angle-right"></li>
-                <li><a href="start.php">Start</a></li>
+                <li><a href="start.html">Start</a></li>
               </ul>
             </div>
           </div>
@@ -254,7 +254,7 @@
                 <li data-link="basic-data" class="current">
                   <a href="#"
                     ><i class="fa fa-pagelines"></i
-                    ><span>Baisc Information</span></a
+                    ><span>Basic Information</span></a
                   >
                 </li>
                 <li data-link="social-media" class="">
@@ -267,7 +267,12 @@
                     ><i class="fa fa-tags"></i><span>Add Perks</span></a
                   >
                 </li>
-                <li data-link="image-vidoe" class="">
+                <li data-link="add-costs" class="">
+                  <a href="#"
+                    ><i class="fa fa-money"></i><span>Add Costs</span></a
+                  >
+                </li>
+                <li data-link="image-video" class="">
                   <a href="#"
                     ><i class="fa fa-file-image-o"></i
                     ><span>Add Images or Video</span></a
@@ -278,7 +283,7 @@
             <hr />
             <div class="start-content">
               <form
-                action="start.php"
+                action=""
                 method="post"
                 enctype="multipart/form-data"
               >
@@ -544,8 +549,8 @@
                     <button
                       type="button"
                       class="btn btn-4 blue"
-                      data-link="image-vidoe"
-                      onClick="moveform(this,'image-vidoe')"
+                      data-link="add-costs"
+                      onClick="moveform(this,'add-costs')"
                     >
                       Next
                     </button>
@@ -553,7 +558,62 @@
                   </div>
                 </div>
 
-                <div id="image-vidoe" class="form-wizard">
+                <div id="add-costs" class="form-wizard">
+                  <div id="cost-elements">
+                    <div class="form-group">
+                      <div class="form-left">
+                        <input
+                          type="text"
+                          value=""
+                          class="form-control"
+                          placeholder="cost Name"
+                          name="cost-title[]"
+                        />
+                      </div>
+                      <div class="form-right">
+                        <input
+                          type="text"
+                          value=""
+                          class="form-control"
+                          placeholder="Amount"
+                          name="price[]"
+                        />
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+
+                  <div id="add-more-expense"></div>
+
+                  <div class="next-btn">
+                    <button
+                      type="button"
+                      class="btn btn-5 yellow add-perk-btn"
+                      onClick="addcost()"
+                    >
+                      Add Another Expense
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-5 blue"
+                      data-link="add-perks"
+                      onClick="moveform(this,'add-perks')"
+                    >
+                      Back
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-4 blue"
+                      data-link="image-video"
+                      onClick="moveform(this,'image-video')"
+                    >
+                      Next
+                    </button>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+
+                <div id="image-video" class="form-wizard">
                   <div class="form-group">
                     <div class="select-gallery-type">
                       <ul>
@@ -581,7 +641,7 @@
                   <div id="images-inputs" class="imgORvid">
                     <div class="form-group">
                       <div id="image-field-cnt">
-                        <div class="form-left selectimage" id="imgupload-1">
+                        <div class="selectimage" id="imgupload-1">
                           <input
                             type="text"
                             value=""
@@ -617,8 +677,8 @@
                     <button
                       type="button"
                       class="btn btn-5 blue"
-                      data-link="add-perks"
-                      onClick="moveform(this,'add-perks')"
+                      data-link="add-costs"
+                      onClick="moveform(this,'add-costs')"
                     >
                       Back
                     </button>
@@ -649,12 +709,13 @@
               <p style="margin-top:60px;">
                 FundMyTuition is a global public benefit Organization, focused
                 on education, intended to run in major zonal regions across the
-                globe.
+                globe. We will be liaising with Institution's Financial Aid or 
+                Bursary to ensure adequate/appropriate disbursement of fundings 
               </p>
               <p>
-                Our mission is to reduce the level of anxiety and hassles
-                students face in sourcing for their tuition or paying off their
-                loans as well as aid quality and innovative Education/Research
+                Our mission is to reduce the limitations, anxiety and hassles
+                students are faced with when sourcing for their tuition or paying off their
+                student loans as well as aid quality and innovative Education/Research
               </p>
               <ul>
                 <li title="Facebook">
@@ -688,7 +749,7 @@
               <h5>Important Links</h5>
               <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="faqs.html">Faq's</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="terms.html">Terms and Conditions</a></li>
