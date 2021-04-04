@@ -5,6 +5,9 @@ import cookieParser from 'cookie-parser';
 import logger from'morgan';
 import db from './models/index'
 
+
+
+
 let app = express();
 
 //Configure Express
